@@ -1,0 +1,71 @@
+﻿@model TaskManagement.Models.Task
+
+
+<div class="modal" id="Addmodal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Add Form</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+
+            @*<input name="IsValid" type="hidden" value="@ViewData.ModelState.IsValid.ToString()" />*@
+            <form class="modelform" action="Create" id="createForm" method="post" enctype="multipart/form-data">
+                <div class="modal-body">
+                    <label for="Email">Email </label>
+                    <input id="Email" class="form-control" type="text" required />
+                </div>
+                <div class="modal-body">
+                    <label for="Fullname">Fullname </label>
+                    <input id="Fullname" class="form-control" type="text" required />
+                </div>
+                <div class="modal-body">
+                    <label for="LastName">LastName </label>
+                    <input id="LastName" class="form-control" type="text" required />
+                </div>
+                <div class="modal-body">
+                    <label for="Address">Address </label>
+                    <input id="Address" class="form-control" type="text" required />
+                </div>
+                <div class="modal-footer">
+                    <input id="btnSave" type="button" class="btn btn-primary" value="Save">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+
+            </form>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script type="text/javascript">
+
+    $(document).ready(function () {
+        $("#btnSave").click(function () {
+            var data = $("#CreateForm").serialize();
+            //console.log(data);
+            $.ajax({
+                type: "POST",
+                url: "/Register/Create",
+                data: data,
+                //contentType: "application/Json;UTF-8",
+                dataType: "json",
+                success: function (data) {
+                    alert("Created success.");
+                    window.location = "https://localhost:44366/Register/Display/";
+
+
+                },
+                failure: function (data) {
+                    alert('fail to add');
+                }
+
+
+            });
+        });
+    });
+
+
+
+</script>
