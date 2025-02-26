@@ -10,7 +10,7 @@
         // bool UpdateTask(Models.Task _model);
         Task<int> UpdateTask(Models.Task _model);
         bool DeleteTask(int id);
-        Task GetTaskByID(int id);
-
+        //Task GetTaskByID(int id);
+        Task<TaskManagement.Models.Task> GetTaskByID(int id);
     }
 }

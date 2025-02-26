@@ -1,0 +1,667 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "F:\\NewTeam\\TaskManagement\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B90F88DA-3BC0-4BFB-9317-5785090AA756}|TaskManagement\\BloodManagement.csproj|F:\\NewTeam\\TaskManagement\\taskmanagement\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B90F88DA-3BC0-4BFB-9317-5785090AA756}|TaskManagement\\BloodManagement.csproj|solutionrelative:taskmanagement\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E197435-CA28-448D-9BFB-DDF425D95587}|Blood.Infrastructure\\Blood.Infrastructure.csproj|f:\\newteam\\taskmanagement\\blood.infrastructure\\repositorydao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0E197435-CA28-448D-9BFB-DDF425D95587}|Blood.Infrastructure\\Blood.Infrastructure.csproj|solutionrelative:blood.infrastructure\\repositorydao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E197435-CA28-448D-9BFB-DDF425D95587}|Blood.Infrastructure\\Blood.Infrastructure.csproj|f:\\newteam\\taskmanagement\\blood.infrastructure\\logininfra\\loginrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0E197435-CA28-448D-9BFB-DDF425D95587}|Blood.Infrastructure\\Blood.Infrastructure.csproj|solutionrelative:blood.infrastructure\\logininfra\\loginrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B90F88DA-3BC0-4BFB-9317-5785090AA756}|TaskManagement\\BloodManagement.csproj|f:\\newteam\\taskmanagement\\taskmanagement\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B90F88DA-3BC0-4BFB-9317-5785090AA756}|TaskManagement\\BloodManagement.csproj|solutionrelative:taskmanagement\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B90F88DA-3BC0-4BFB-9317-5785090AA756}|TaskManagement\\TaskManagement.csproj|F:\\NewTeam\\TaskManagement\\taskmanagement\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B90F88DA-3BC0-4BFB-9317-5785090AA756}|TaskManagement\\TaskManagement.csproj|solutionrelative:taskmanagement\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E197435-CA28-448D-9BFB-DDF425D95587}|Blood.Infrastructure\\Blood.Infrastructure.csproj|f:\\newteam\\taskmanagement\\blood.infrastructure\\dbconnection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0E197435-CA28-448D-9BFB-DDF425D95587}|Blood.Infrastructure\\Blood.Infrastructure.csproj|solutionrelative:blood.infrastructure\\dbconnection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E197435-CA28-448D-9BFB-DDF425D95587}|Blood.Infrastructure\\Blood.Infrastructure.csproj|f:\\newteam\\taskmanagement\\blood.infrastructure\\dappercontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0E197435-CA28-448D-9BFB-DDF425D95587}|Blood.Infrastructure\\Blood.Infrastructure.csproj|solutionrelative:blood.infrastructure\\dappercontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{233A94C1-52B9-4296-B842-5D2F91A49B83}|Blood.Domain\\Blood.Domain.csproj|f:\\newteam\\taskmanagement\\blood.domain\\login\\logincommon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{233A94C1-52B9-4296-B842-5D2F91A49B83}|Blood.Domain\\Blood.Domain.csproj|solutionrelative:blood.domain\\login\\logincommon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B90F88DA-3BC0-4BFB-9317-5785090AA756}|TaskManagement\\BloodManagement.csproj|f:\\newteam\\taskmanagement\\taskmanagement\\extension\\agentprofilemap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B90F88DA-3BC0-4BFB-9317-5785090AA756}|TaskManagement\\BloodManagement.csproj|solutionrelative:taskmanagement\\extension\\agentprofilemap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B90F88DA-3BC0-4BFB-9317-5785090AA756}|TaskManagement\\BloodManagement.csproj|f:\\newteam\\taskmanagement\\taskmanagement\\interface\\itaskmanagment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B90F88DA-3BC0-4BFB-9317-5785090AA756}|TaskManagement\\BloodManagement.csproj|solutionrelative:taskmanagement\\interface\\itaskmanagment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B90F88DA-3BC0-4BFB-9317-5785090AA756}|TaskManagement\\BloodManagement.csproj|F:\\NewTeam\\TaskManagement\\taskmanagement\\controllers\\chatusercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B90F88DA-3BC0-4BFB-9317-5785090AA756}|TaskManagement\\BloodManagement.csproj|solutionrelative:taskmanagement\\controllers\\chatusercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B90F88DA-3BC0-4BFB-9317-5785090AA756}|TaskManagement\\BloodManagement.csproj|f:\\newteam\\taskmanagement\\taskmanagement\\appdbcontext\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B90F88DA-3BC0-4BFB-9317-5785090AA756}|TaskManagement\\BloodManagement.csproj|solutionrelative:taskmanagement\\appdbcontext\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B90F88DA-3BC0-4BFB-9317-5785090AA756}|TaskManagement\\TaskManagement.csproj|F:\\NewTeam\\TaskManagement\\taskmanagement\\appdbcontext\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B90F88DA-3BC0-4BFB-9317-5785090AA756}|TaskManagement\\TaskManagement.csproj|solutionrelative:taskmanagement\\appdbcontext\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B90F88DA-3BC0-4BFB-9317-5785090AA756}|TaskManagement\\BloodManagement.csproj|F:\\NewTeam\\TaskManagement\\taskmanagement\\models\\adminuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B90F88DA-3BC0-4BFB-9317-5785090AA756}|TaskManagement\\BloodManagement.csproj|solutionrelative:taskmanagement\\models\\adminuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2BFD7579-5390-43EB-ABC4-8F025D5AF3D1}|Blood.Business\\Blood.Business.csproj|f:\\newteam\\taskmanagement\\blood.business\\loginuser\\iloginbusiness.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2BFD7579-5390-43EB-ABC4-8F025D5AF3D1}|Blood.Business\\Blood.Business.csproj|solutionrelative:blood.business\\loginuser\\iloginbusiness.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{233A94C1-52B9-4296-B842-5D2F91A49B83}|Blood.Domain\\Blood.Domain.csproj|f:\\newteam\\taskmanagement\\blood.domain\\commondbresponse\\commondbresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{233A94C1-52B9-4296-B842-5D2F91A49B83}|Blood.Domain\\Blood.Domain.csproj|solutionrelative:blood.domain\\commondbresponse\\commondbresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B90F88DA-3BC0-4BFB-9317-5785090AA756}|TaskManagement\\BloodManagement.csproj|F:\\NewTeam\\TaskManagement\\taskmanagement\\controllers\\taskmanagemntcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B90F88DA-3BC0-4BFB-9317-5785090AA756}|TaskManagement\\BloodManagement.csproj|solutionrelative:taskmanagement\\controllers\\taskmanagemntcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B90F88DA-3BC0-4BFB-9317-5785090AA756}|TaskManagement\\BloodManagement.csproj|F:\\NewTeam\\TaskManagement\\taskmanagement\\models\\bsregisteruser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B90F88DA-3BC0-4BFB-9317-5785090AA756}|TaskManagement\\BloodManagement.csproj|solutionrelative:taskmanagement\\models\\bsregisteruser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B90F88DA-3BC0-4BFB-9317-5785090AA756}|TaskManagement\\BloodManagement.csproj|f:\\newteam\\taskmanagement\\taskmanagement\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B90F88DA-3BC0-4BFB-9317-5785090AA756}|TaskManagement\\BloodManagement.csproj|solutionrelative:taskmanagement\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B90F88DA-3BC0-4BFB-9317-5785090AA756}|TaskManagement\\TaskManagement.csproj|F:\\NewTeam\\TaskManagement\\taskmanagement\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B90F88DA-3BC0-4BFB-9317-5785090AA756}|TaskManagement\\TaskManagement.csproj|solutionrelative:taskmanagement\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B90F88DA-3BC0-4BFB-9317-5785090AA756}|TaskManagement\\BloodManagement.csproj|f:\\newteam\\taskmanagement\\taskmanagement\\ormdapper\\dappercontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B90F88DA-3BC0-4BFB-9317-5785090AA756}|TaskManagement\\BloodManagement.csproj|solutionrelative:taskmanagement\\ormdapper\\dappercontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2BFD7579-5390-43EB-ABC4-8F025D5AF3D1}|Blood.Business\\Blood.Business.csproj|F:\\NewTeam\\TaskManagement\\blood.business\\chathub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2BFD7579-5390-43EB-ABC4-8F025D5AF3D1}|Blood.Business\\Blood.Business.csproj|solutionrelative:blood.business\\chathub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2BFD7579-5390-43EB-ABC4-8F025D5AF3D1}|Blood.Business\\Blood.Business.csproj|F:\\NewTeam\\TaskManagement\\blood.business\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2BFD7579-5390-43EB-ABC4-8F025D5AF3D1}|Blood.Business\\Blood.Business.csproj|solutionrelative:blood.business\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B90F88DA-3BC0-4BFB-9317-5785090AA756}|TaskManagement\\BloodManagement.csproj|f:\\newteam\\taskmanagement\\taskmanagement\\views\\home\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B90F88DA-3BC0-4BFB-9317-5785090AA756}|TaskManagement\\BloodManagement.csproj|solutionrelative:taskmanagement\\views\\home\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B90F88DA-3BC0-4BFB-9317-5785090AA756}|TaskManagement\\TaskManagement.csproj|F:\\NewTeam\\TaskManagement\\taskmanagement\\views\\home\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B90F88DA-3BC0-4BFB-9317-5785090AA756}|TaskManagement\\TaskManagement.csproj|solutionrelative:taskmanagement\\views\\home\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B90F88DA-3BC0-4BFB-9317-5785090AA756}|TaskManagement\\BloodManagement.csproj|f:\\newteam\\taskmanagement\\taskmanagement\\views\\home\\loginuser.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B90F88DA-3BC0-4BFB-9317-5785090AA756}|TaskManagement\\BloodManagement.csproj|solutionrelative:taskmanagement\\views\\home\\loginuser.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2BFD7579-5390-43EB-ABC4-8F025D5AF3D1}|Blood.Business\\Blood.Business.csproj|F:\\NewTeam\\TaskManagement\\blood.business\\blood.business.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{2BFD7579-5390-43EB-ABC4-8F025D5AF3D1}|Blood.Business\\Blood.Business.csproj|solutionrelative:blood.business\\blood.business.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B90F88DA-3BC0-4BFB-9317-5785090AA756}|TaskManagement\\BloodManagement.csproj|F:\\NewTeam\\TaskManagement\\taskmanagement\\views\\home\\registeruser.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B90F88DA-3BC0-4BFB-9317-5785090AA756}|TaskManagement\\BloodManagement.csproj|solutionrelative:taskmanagement\\views\\home\\registeruser.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B90F88DA-3BC0-4BFB-9317-5785090AA756}|TaskManagement\\TaskManagement.csproj|F:\\NewTeam\\TaskManagement\\taskmanagement\\controllers\\taskmanagemntcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B90F88DA-3BC0-4BFB-9317-5785090AA756}|TaskManagement\\TaskManagement.csproj|solutionrelative:taskmanagement\\controllers\\taskmanagemntcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B90F88DA-3BC0-4BFB-9317-5785090AA756}|TaskManagement\\TaskManagement.csproj|F:\\NewTeam\\TaskManagement\\taskmanagement\\views\\taskmanagemnt\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B90F88DA-3BC0-4BFB-9317-5785090AA756}|TaskManagement\\TaskManagement.csproj|solutionrelative:taskmanagement\\views\\taskmanagemnt\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B90F88DA-3BC0-4BFB-9317-5785090AA756}|TaskManagement\\BloodManagement.csproj|F:\\NewTeam\\TaskManagement\\taskmanagement\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B90F88DA-3BC0-4BFB-9317-5785090AA756}|TaskManagement\\BloodManagement.csproj|solutionrelative:taskmanagement\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B90F88DA-3BC0-4BFB-9317-5785090AA756}|TaskManagement\\TaskManagement.csproj|F:\\NewTeam\\TaskManagement\\taskmanagement\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B90F88DA-3BC0-4BFB-9317-5785090AA756}|TaskManagement\\TaskManagement.csproj|solutionrelative:taskmanagement\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{233A94C1-52B9-4296-B842-5D2F91A49B83}|Blood.Domain\\Blood.Domain.csproj|F:\\NewTeam\\TaskManagement\\blood.domain\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{233A94C1-52B9-4296-B842-5D2F91A49B83}|Blood.Domain\\Blood.Domain.csproj|solutionrelative:blood.domain\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B90F88DA-3BC0-4BFB-9317-5785090AA756}|TaskManagement\\TaskManagement.csproj|F:\\NewTeam\\TaskManagement\\taskmanagement\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B90F88DA-3BC0-4BFB-9317-5785090AA756}|TaskManagement\\TaskManagement.csproj|solutionrelative:taskmanagement\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B90F88DA-3BC0-4BFB-9317-5785090AA756}|TaskManagement\\TaskManagement.csproj|F:\\NewTeam\\TaskManagement\\taskmanagement\\views\\taskmanagemnt\\viewpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B90F88DA-3BC0-4BFB-9317-5785090AA756}|TaskManagement\\TaskManagement.csproj|solutionrelative:taskmanagement\\views\\taskmanagemnt\\viewpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B90F88DA-3BC0-4BFB-9317-5785090AA756}|TaskManagement\\TaskManagement.csproj|F:\\NewTeam\\TaskManagement\\taskmanagement\\models\\task.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B90F88DA-3BC0-4BFB-9317-5785090AA756}|TaskManagement\\TaskManagement.csproj|solutionrelative:taskmanagement\\models\\task.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B90F88DA-3BC0-4BFB-9317-5785090AA756}|TaskManagement\\TaskManagement.csproj|F:\\NewTeam\\TaskManagement\\taskmanagement\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{B90F88DA-3BC0-4BFB-9317-5785090AA756}|TaskManagement\\TaskManagement.csproj|solutionrelative:taskmanagement\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B90F88DA-3BC0-4BFB-9317-5785090AA756}|TaskManagement\\TaskManagement.csproj|F:\\NewTeam\\TaskManagement\\taskmanagement\\views\\home\\dashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B90F88DA-3BC0-4BFB-9317-5785090AA756}|TaskManagement\\TaskManagement.csproj|solutionrelative:taskmanagement\\views\\home\\dashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B90F88DA-3BC0-4BFB-9317-5785090AA756}|TaskManagement\\TaskManagement.csproj|F:\\NewTeam\\TaskManagement\\taskmanagement\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B90F88DA-3BC0-4BFB-9317-5785090AA756}|TaskManagement\\TaskManagement.csproj|solutionrelative:taskmanagement\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "AgentProfileMap.cs",
+              "DocumentMoniker": "F:\\NewTeam\\TaskManagement\\TaskManagement\\Extension\\AgentProfileMap.cs",
+              "RelativeDocumentMoniker": "TaskManagement\\Extension\\AgentProfileMap.cs",
+              "ToolTip": "F:\\NewTeam\\TaskManagement\\TaskManagement\\Extension\\AgentProfileMap.cs",
+              "RelativeToolTip": "TaskManagement\\Extension\\AgentProfileMap.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-26T16:55:42.078Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ITaskManagment.cs",
+              "DocumentMoniker": "F:\\NewTeam\\TaskManagement\\TaskManagement\\Interface\\ITaskManagment.cs",
+              "RelativeDocumentMoniker": "TaskManagement\\Interface\\ITaskManagment.cs",
+              "ToolTip": "F:\\NewTeam\\TaskManagement\\TaskManagement\\Interface\\ITaskManagment.cs",
+              "RelativeToolTip": "TaskManagement\\Interface\\ITaskManagment.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-26T16:55:40.605Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "LoginRepo.cs",
+              "DocumentMoniker": "F:\\NewTeam\\TaskManagement\\Blood.Infrastructure\\LoginInfra\\LoginRepo.cs",
+              "RelativeDocumentMoniker": "Blood.Infrastructure\\LoginInfra\\LoginRepo.cs",
+              "ToolTip": "F:\\NewTeam\\TaskManagement\\Blood.Infrastructure\\LoginInfra\\LoginRepo.cs",
+              "RelativeToolTip": "Blood.Infrastructure\\LoginInfra\\LoginRepo.cs",
+              "ViewState": "AQIAABIAAAAAAAAAAAAAABoAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-26T16:15:24.22Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "F:\\NewTeam\\TaskManagement\\TaskManagement\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "TaskManagement\\Controllers\\HomeController.cs",
+              "ToolTip": "F:\\NewTeam\\TaskManagement\\TaskManagement\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "TaskManagement\\Controllers\\HomeController.cs",
+              "ViewState": "AQIAABgAAAAAAAAAAAA3wC8AAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-24T16:22:17.327Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "DBConnection.cs",
+              "DocumentMoniker": "F:\\NewTeam\\TaskManagement\\Blood.Infrastructure\\DBConnection.cs",
+              "RelativeDocumentMoniker": "Blood.Infrastructure\\DBConnection.cs",
+              "ToolTip": "F:\\NewTeam\\TaskManagement\\Blood.Infrastructure\\DBConnection.cs",
+              "RelativeToolTip": "Blood.Infrastructure\\DBConnection.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-26T17:08:37.342Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "RepositoryDao.cs",
+              "DocumentMoniker": "F:\\NewTeam\\TaskManagement\\Blood.Infrastructure\\RepositoryDao.cs",
+              "RelativeDocumentMoniker": "Blood.Infrastructure\\RepositoryDao.cs",
+              "ToolTip": "F:\\NewTeam\\TaskManagement\\Blood.Infrastructure\\RepositoryDao.cs",
+              "RelativeToolTip": "Blood.Infrastructure\\RepositoryDao.cs",
+              "ViewState": "AQIAAGoAAAAAAAAAAAAkwHwAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-26T17:08:39.039Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "F:\\NewTeam\\TaskManagement\\TaskManagement\\Program.cs",
+              "RelativeDocumentMoniker": "TaskManagement\\Program.cs",
+              "ToolTip": "F:\\NewTeam\\TaskManagement\\TaskManagement\\Program.cs",
+              "RelativeToolTip": "TaskManagement\\Program.cs",
+              "ViewState": "AQIAABMAAAAAAAAAAAAswCYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-26T17:09:33.764Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "DapperContext.cs",
+              "DocumentMoniker": "F:\\NewTeam\\TaskManagement\\Blood.Infrastructure\\DapperContext.cs",
+              "RelativeDocumentMoniker": "Blood.Infrastructure\\DapperContext.cs",
+              "ToolTip": "F:\\NewTeam\\TaskManagement\\Blood.Infrastructure\\DapperContext.cs",
+              "RelativeToolTip": "Blood.Infrastructure\\DapperContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAABSAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-26T17:08:32.261Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "LoginCommon.cs",
+              "DocumentMoniker": "F:\\NewTeam\\TaskManagement\\Blood.Domain\\Login\\LoginCommon.cs",
+              "RelativeDocumentMoniker": "Blood.Domain\\Login\\LoginCommon.cs",
+              "ToolTip": "F:\\NewTeam\\TaskManagement\\Blood.Domain\\Login\\LoginCommon.cs",
+              "RelativeToolTip": "Blood.Domain\\Login\\LoginCommon.cs",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAAAAoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-26T16:45:40.734Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "F:\\NewTeam\\TaskManagement\\TaskManagement\\Appdbcontext\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "TaskManagement\\Appdbcontext\\AppDbContext.cs",
+              "ToolTip": "F:\\NewTeam\\TaskManagement\\TaskManagement\\Appdbcontext\\AppDbContext.cs",
+              "RelativeToolTip": "TaskManagement\\Appdbcontext\\AppDbContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-26T16:55:34.831Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "AdminUser.cs",
+              "DocumentMoniker": "F:\\NewTeam\\TaskManagement\\TaskManagement\\Models\\AdminUser.cs",
+              "RelativeDocumentMoniker": "TaskManagement\\Models\\AdminUser.cs",
+              "ToolTip": "F:\\NewTeam\\TaskManagement\\TaskManagement\\Models\\AdminUser.cs",
+              "RelativeToolTip": "TaskManagement\\Models\\AdminUser.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-24T17:16:49.035Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "ILoginBusiness.cs",
+              "DocumentMoniker": "F:\\NewTeam\\TaskManagement\\Blood.Business\\LoginUser\\ILoginBusiness.cs",
+              "RelativeDocumentMoniker": "Blood.Business\\LoginUser\\ILoginBusiness.cs",
+              "ToolTip": "F:\\NewTeam\\TaskManagement\\Blood.Business\\LoginUser\\ILoginBusiness.cs",
+              "RelativeToolTip": "Blood.Business\\LoginUser\\ILoginBusiness.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-26T16:12:17.38Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "F:\\NewTeam\\TaskManagement\\TaskManagement\\Appdbcontext\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "TaskManagement\\Appdbcontext\\AppDbContext.cs",
+              "ToolTip": "F:\\NewTeam\\TaskManagement\\TaskManagement\\Appdbcontext\\AppDbContext.cs",
+              "RelativeToolTip": "TaskManagement\\Appdbcontext\\AppDbContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-05T19:00:19.557Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ChatUserController.cs",
+              "DocumentMoniker": "F:\\NewTeam\\TaskManagement\\TaskManagement\\Controllers\\ChatUserController.cs",
+              "RelativeDocumentMoniker": "TaskManagement\\Controllers\\ChatUserController.cs",
+              "ToolTip": "F:\\NewTeam\\TaskManagement\\TaskManagement\\Controllers\\ChatUserController.cs",
+              "RelativeToolTip": "TaskManagement\\Controllers\\ChatUserController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-24T16:22:15.418Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "CommonDBResponse.cs",
+              "DocumentMoniker": "F:\\NewTeam\\TaskManagement\\Blood.Domain\\CommonDbResponse\\CommonDBResponse.cs",
+              "RelativeDocumentMoniker": "Blood.Domain\\CommonDbResponse\\CommonDBResponse.cs",
+              "ToolTip": "F:\\NewTeam\\TaskManagement\\Blood.Domain\\CommonDbResponse\\CommonDBResponse.cs",
+              "RelativeToolTip": "Blood.Domain\\CommonDbResponse\\CommonDBResponse.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-26T16:23:17.037Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "TaskManagemntController.cs",
+              "DocumentMoniker": "F:\\NewTeam\\TaskManagement\\TaskManagement\\Controllers\\TaskManagemntController.cs",
+              "RelativeDocumentMoniker": "TaskManagement\\Controllers\\TaskManagemntController.cs",
+              "ToolTip": "F:\\NewTeam\\TaskManagement\\TaskManagement\\Controllers\\TaskManagemntController.cs",
+              "RelativeToolTip": "TaskManagement\\Controllers\\TaskManagemntController.cs",
+              "ViewState": "AQIAACcAAAAAAAAAAAAAADIAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-24T16:22:26.339Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "BSRegisterUser.cs",
+              "DocumentMoniker": "F:\\NewTeam\\TaskManagement\\TaskManagement\\Models\\BSRegisterUser.cs",
+              "RelativeDocumentMoniker": "TaskManagement\\Models\\BSRegisterUser.cs",
+              "ToolTip": "F:\\NewTeam\\TaskManagement\\TaskManagement\\Models\\BSRegisterUser.cs",
+              "RelativeToolTip": "TaskManagement\\Models\\BSRegisterUser.cs",
+              "ViewState": "AQIAABIAAAAAAAAAAAAqwBcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-24T16:56:49.848Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "ErrorViewModel.cs",
+              "DocumentMoniker": "F:\\NewTeam\\TaskManagement\\TaskManagement\\Models\\ErrorViewModel.cs",
+              "RelativeDocumentMoniker": "TaskManagement\\Models\\ErrorViewModel.cs",
+              "ToolTip": "F:\\NewTeam\\TaskManagement\\TaskManagement\\Models\\ErrorViewModel.cs",
+              "RelativeToolTip": "TaskManagement\\Models\\ErrorViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-26T16:08:04.841Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "ErrorViewModel.cs",
+              "DocumentMoniker": "F:\\NewTeam\\TaskManagement\\TaskManagement\\Models\\ErrorViewModel.cs",
+              "RelativeDocumentMoniker": "TaskManagement\\Models\\ErrorViewModel.cs",
+              "ToolTip": "F:\\NewTeam\\TaskManagement\\TaskManagement\\Models\\ErrorViewModel.cs",
+              "RelativeToolTip": "TaskManagement\\Models\\ErrorViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-06T06:58:10.202Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "DapperContext.cs",
+              "DocumentMoniker": "F:\\NewTeam\\TaskManagement\\TaskManagement\\ORMDapper\\DapperContext.cs",
+              "RelativeDocumentMoniker": "TaskManagement\\ORMDapper\\DapperContext.cs",
+              "ToolTip": "F:\\NewTeam\\TaskManagement\\TaskManagement\\ORMDapper\\DapperContext.cs",
+              "RelativeToolTip": "TaskManagement\\ORMDapper\\DapperContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-26T16:07:59.521Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "ChatHub.cs",
+              "DocumentMoniker": "F:\\NewTeam\\TaskManagement\\Blood.Business\\ChatHub.cs",
+              "RelativeDocumentMoniker": "Blood.Business\\ChatHub.cs",
+              "ToolTip": "F:\\NewTeam\\TaskManagement\\Blood.Business\\ChatHub.cs",
+              "RelativeToolTip": "Blood.Business\\ChatHub.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-23T15:30:54.5Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Class1.cs",
+              "DocumentMoniker": "F:\\NewTeam\\TaskManagement\\Blood.Business\\Class1.cs",
+              "RelativeDocumentMoniker": "Blood.Business\\Class1.cs",
+              "ToolTip": "F:\\NewTeam\\TaskManagement\\Blood.Business\\Class1.cs",
+              "RelativeToolTip": "Blood.Business\\Class1.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-20T17:21:34.801Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "F:\\NewTeam\\TaskManagement\\TaskManagement\\Program.cs",
+              "RelativeDocumentMoniker": "TaskManagement\\Program.cs",
+              "ToolTip": "F:\\NewTeam\\TaskManagement\\TaskManagement\\Program.cs",
+              "RelativeToolTip": "TaskManagement\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-05T18:52:50.173Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "Blood.Business.csproj",
+              "DocumentMoniker": "F:\\NewTeam\\TaskManagement\\Blood.Business\\Blood.Business.csproj",
+              "RelativeDocumentMoniker": "Blood.Business\\Blood.Business.csproj",
+              "ToolTip": "F:\\NewTeam\\TaskManagement\\Blood.Business\\Blood.Business.csproj",
+              "RelativeToolTip": "Blood.Business\\Blood.Business.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-02-24T16:25:26.437Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "F:\\NewTeam\\TaskManagement\\TaskManagement\\Views\\Home\\Login.cshtml",
+              "RelativeDocumentMoniker": "TaskManagement\\Views\\Home\\Login.cshtml",
+              "ToolTip": "F:\\NewTeam\\TaskManagement\\TaskManagement\\Views\\Home\\Login.cshtml",
+              "RelativeToolTip": "TaskManagement\\Views\\Home\\Login.cshtml",
+              "ViewState": "AQIAAE4AAAAAAAAAAAAgwHMAAAAHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-26T15:56:58.263Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "LoginUser.cshtml",
+              "DocumentMoniker": "F:\\NewTeam\\TaskManagement\\TaskManagement\\Views\\Home\\LoginUser.cshtml",
+              "RelativeDocumentMoniker": "TaskManagement\\Views\\Home\\LoginUser.cshtml",
+              "ToolTip": "F:\\NewTeam\\TaskManagement\\TaskManagement\\Views\\Home\\LoginUser.cshtml",
+              "RelativeToolTip": "TaskManagement\\Views\\Home\\LoginUser.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-24T17:13:05.37Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "F:\\NewTeam\\TaskManagement\\TaskManagement\\Views\\Home\\Login.cshtml",
+              "RelativeDocumentMoniker": "TaskManagement\\Views\\Home\\Login.cshtml",
+              "ToolTip": "F:\\NewTeam\\TaskManagement\\TaskManagement\\Views\\Home\\Login.cshtml",
+              "RelativeToolTip": "TaskManagement\\Views\\Home\\Login.cshtml",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAAAwAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-05T16:12:34.719Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "RegisterUser.cshtml",
+              "DocumentMoniker": "F:\\NewTeam\\TaskManagement\\TaskManagement\\Views\\Home\\RegisterUser.cshtml",
+              "RelativeDocumentMoniker": "TaskManagement\\Views\\Home\\RegisterUser.cshtml",
+              "ToolTip": "F:\\NewTeam\\TaskManagement\\TaskManagement\\Views\\Home\\RegisterUser.cshtml",
+              "RelativeToolTip": "TaskManagement\\Views\\Home\\RegisterUser.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-24T16:43:54.607Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "TaskManagemntController.cs",
+              "DocumentMoniker": "F:\\NewTeam\\TaskManagement\\TaskManagement\\Controllers\\TaskManagemntController.cs",
+              "RelativeDocumentMoniker": "TaskManagement\\Controllers\\TaskManagemntController.cs",
+              "ToolTip": "F:\\NewTeam\\TaskManagement\\TaskManagement\\Controllers\\TaskManagemntController.cs",
+              "RelativeToolTip": "TaskManagement\\Controllers\\TaskManagemntController.cs",
+              "ViewState": "AQIAACcAAAAAAAAAAAAAADIAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-05T16:52:04.326Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "F:\\NewTeam\\TaskManagement\\TaskManagement\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "TaskManagement\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "F:\\NewTeam\\TaskManagement\\TaskManagement\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "TaskManagement\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAADYAAAAAAAAAAAAAADYAAAAcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-23T15:41:49.197Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "F:\\NewTeam\\TaskManagement\\TaskManagement\\Views\\TaskManagemnt\\Index.cshtml",
+              "RelativeDocumentMoniker": "TaskManagement\\Views\\TaskManagemnt\\Index.cshtml",
+              "ToolTip": "F:\\NewTeam\\TaskManagement\\TaskManagement\\Views\\TaskManagemnt\\Index.cshtml",
+              "RelativeToolTip": "TaskManagement\\Views\\TaskManagemnt\\Index.cshtml",
+              "ViewState": "AQIAACsAAAAAAAAAAAAAACsAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-06T04:56:00.093Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "F:\\NewTeam\\TaskManagement\\TaskManagement\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "TaskManagement\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "F:\\NewTeam\\TaskManagement\\TaskManagement\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "TaskManagement\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAADYAAAAAAAAAAAAAADYAAAAcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-04T15:07:27.239Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "_ViewStart.cshtml",
+              "DocumentMoniker": "F:\\NewTeam\\TaskManagement\\TaskManagement\\Views\\_ViewStart.cshtml",
+              "RelativeDocumentMoniker": "TaskManagement\\Views\\_ViewStart.cshtml",
+              "ToolTip": "F:\\NewTeam\\TaskManagement\\TaskManagement\\Views\\_ViewStart.cshtml",
+              "RelativeToolTip": "TaskManagement\\Views\\_ViewStart.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-20T16:53:29.853Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "Class1.cs",
+              "DocumentMoniker": "F:\\NewTeam\\TaskManagement\\Blood.Domain\\Class1.cs",
+              "RelativeDocumentMoniker": "Blood.Domain\\Class1.cs",
+              "ToolTip": "F:\\NewTeam\\TaskManagement\\Blood.Domain\\Class1.cs",
+              "RelativeToolTip": "Blood.Domain\\Class1.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-20T17:20:46.013Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "ViewPartial.cshtml",
+              "DocumentMoniker": "F:\\NewTeam\\TaskManagement\\TaskManagement\\Views\\TaskManagemnt\\ViewPartial.cshtml",
+              "RelativeDocumentMoniker": "TaskManagement\\Views\\TaskManagemnt\\ViewPartial.cshtml",
+              "ToolTip": "F:\\NewTeam\\TaskManagement\\TaskManagement\\Views\\TaskManagemnt\\ViewPartial.cshtml",
+              "RelativeToolTip": "TaskManagement\\Views\\TaskManagemnt\\ViewPartial.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-06T07:15:00.915Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "Task.cs",
+              "DocumentMoniker": "F:\\NewTeam\\TaskManagement\\TaskManagement\\Models\\Task.cs",
+              "RelativeDocumentMoniker": "TaskManagement\\Models\\Task.cs",
+              "ToolTip": "F:\\NewTeam\\TaskManagement\\TaskManagement\\Models\\Task.cs",
+              "RelativeToolTip": "TaskManagement\\Models\\Task.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-06T06:55:28.851Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "F:\\NewTeam\\TaskManagement\\TaskManagement\\appsettings.json",
+              "RelativeDocumentMoniker": "TaskManagement\\appsettings.json",
+              "ToolTip": "F:\\NewTeam\\TaskManagement\\TaskManagement\\appsettings.json",
+              "RelativeToolTip": "TaskManagement\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-02-05T16:55:57.069Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "Dashboard.cshtml",
+              "DocumentMoniker": "F:\\NewTeam\\TaskManagement\\TaskManagement\\Views\\Home\\Dashboard.cshtml",
+              "RelativeDocumentMoniker": "TaskManagement\\Views\\Home\\Dashboard.cshtml",
+              "ToolTip": "F:\\NewTeam\\TaskManagement\\TaskManagement\\Views\\Home\\Dashboard.cshtml",
+              "RelativeToolTip": "TaskManagement\\Views\\Home\\Dashboard.cshtml",
+              "ViewState": "AQIAAAQAAAAAAAAAAAAawBgAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-04T15:24:27.78Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "F:\\NewTeam\\TaskManagement\\TaskManagement\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "TaskManagement\\Views\\Home\\Index.cshtml",
+              "ToolTip": "F:\\NewTeam\\TaskManagement\\TaskManagement\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "TaskManagement\\Views\\Home\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-05T16:12:31.748Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

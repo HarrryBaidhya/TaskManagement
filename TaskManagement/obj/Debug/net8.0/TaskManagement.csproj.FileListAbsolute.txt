@@ -204,3 +204,4 @@ F:\NewTeam\TaskManagement\TaskManagement\bin\Debug\net8.0\ExcelNumberFormat.dll
 F:\NewTeam\TaskManagement\TaskManagement\bin\Debug\net8.0\RBush.dll
 F:\NewTeam\TaskManagement\TaskManagement\bin\Debug\net8.0\SixLabors.Fonts.dll
 F:\NewTeam\TaskManagement\TaskManagement\bin\Debug\net8.0\System.IO.Packaging.dll
+F:\NewTeam\TaskManagement\TaskManagement\obj\Debug\net8.0\TaskManagement.sourcelink.json

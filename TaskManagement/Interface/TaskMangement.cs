@@ -34,13 +34,16 @@ namespace TaskManagement.Interface
             }
 
         }
-        
-        public Task GetTaskByID(int id)
+
+        public async Task<Models.Task?> GetTaskByID(int id)
         {
-            var sql = "SELECT * FROM Tasks where id='"+id+"'";
+            var sql = "SELECT * FROM Tasks WHERE id = @Id";
 
             using var connection = context.CreateConnection();
-            return connection.QueryAsync<Models.Task>(sql, new { id });
+           var result = await connection.QueryAsync<Models.Task>(sql, new { Id = id });
+            return result.FirstOrDefault();
+
+
         }
 
 

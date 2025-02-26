@@ -1,0 +1,352 @@
+﻿@model BloodManagement.Models.Login;
+@{
+    Layout = null;
+}
+<!doctype html>
+<html lang="en">
+
+
+
+<head>
+
+    <meta charset="utf-8" />
+    <title> DrinkMandu</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="Premium Multipurpose Admin & Dashboard Template" name="description" />
+    <meta content="Themesbrand" name="author" />
+    <!-- App favicon -->
+    <link rel="shortcut icon" href="~/register/image/istockphoto-475500992-612x612.jpg">
+
+    <!-- owl.carousel css -->
+    <link rel="stylesheet" href="~/register/libs/owl.carousel/assets/owl.carousel.min.css">
+
+    <link rel="stylesheet" href="~/register/libs/owl.carousel/assets/owl.theme.default.min.css">
+
+    <!-- Bootstrap Css -->
+    <link href="~/register/css/bootstrap.min.css" id="bootstrap-style" rel="stylesheet" type="text/css" />
+    <!-- Icons Css -->
+    <link href="~/register/css/icons.min.css" rel="stylesheet" type="text/css" />
+    <!-- App Css-->
+    <link href="~/register/css/app.min.css" id="app-style" rel="stylesheet" type="text/css" />
+
+</head>
+
+
+<body class="auth-body-bg">
+
+    <div>
+        <div class="container-fluid p-0">
+            <div class="row g-0">
+
+                <div class="col-xl-9 d-none d-lg-block" style="position: fixed;">
+                    <div class="auth-full-bg pt-lg-5 p-4">
+                        <div class="w-100">
+                            <div class="bg-overlay"></div>
+                            <div class="d-flex h-100 flex-column">
+
+                                <div class="p-4 mt-auto">
+                                    <div class="row justify-content-center">
+                                        <div class="col-lg-7">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end col -->
+
+                <div class="col-xl-3" style="position: absolute;right: 0; ">
+                    <div class="auth-full-page-content p-md-5 p-4">
+                        <div class="w-100">
+
+                            <div class="d-flex flex-column h-100">
+                                <div class="mb-4 mb-md-5">
+                                    <a href="" class="d-block auth-logo">
+                                        <img src="~/register/image/istockphoto-475500992-612x612.jpg" alt="" height="38" class="auth-logo-dark">
+                                        <img src="~/register/image/istockphoto-475500992-612x612.jpg" alt="" height="38" class="auth-logo-light">
+                                    </a>
+                                </div>
+                                <div class="my-auto">
+
+                                    <div>
+                                        <h2 class="text-warning">Welcome Back !</h2>
+                                        <p class="text-muted">Sign In.</p>
+                                    </div>
+
+                                    <div class="mt-3">
+                                        <form action="/Web">
+                                            <p id="dvMessage"></p>
+                                            <div class="mb-3">
+                                                <label for="username" class="form-label"> Username</label>
+                                                @Html.TextBox("Email", "", new { @Id = "Email", @Class = "form-control form-control-lg", autocomplete = "off", placeholder = "Enter your Email" })
+                                            </div>
+
+                                            <div class="mb-2">
+                                                <div class="float-end">
+                                                    <a href="Login/ForgertPassword" class="text-muted">Forgot password?</a>
+                                                </div>
+                                                <label class="form-label">Password</label>
+                                                <div class="input-group">
+                                                    @Html.TextBox("Password", "", new { @Type = "password", @id = "Password", @Class = "form-control form-control-lg", autocomplete = "off", placeholder = "Enter your password" })
+
+                                                </div>
+
+                                            </div>
+
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" id="remember-check">
+                                                <label class="form-check-label" for="remember-check">
+                                                    Remember me
+                                                </label>
+                                            </div>
+
+                                            <div class="mt-3 d-grid">
+                                                <input class="btn btn-warning waves-effect waves-light" type="submit" value="Log In" />
+
+                                            </div>
+
+                                        </form>
+                                        <div class="mt-3 text-center">
+                                            <p> <a href="/AddAgent/RegisterAgent" class="fw-medium text-warning"> Register </a> </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="mt-3 mt-md-5 text-center footer-login" style="position: absolute;bottom: 0;">
+                                    <p class="mb-0">© <script>document.write(new Date().getFullYear())</script> DrinKmandu <i class="mdi mdi-flash text-danger"></i> by DrinkMandu Nepal</p>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+                <!-- end col -->
+            </div>
+            <!-- end row -->
+        </div>
+        <!-- end container-fluid -->
+    </div>
+
+
+    <!-- JAVASCRIPT -->
+
+    <script src="~/register/boostrap/lib/jquery/jquery.min.js"></script>
+    <script src="~/register/boostrap/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="~/register/boostrap/lib/metismenu/metisMenu.min.js"></script>
+    <script src="~/register/boostrap/lib/simplebar/simplebar.min.js"></script>
+    <script src="~/register/boostrap/lib/node-waves/waves.min.js"></script>
+
+    <!-- owl.carousel js -->
+    <script src="~/register/lib/owl.carousel/owl.carousel.min.js"></script>
+
+    <!-- auth-2-carousel init -->
+    <script src="~/register/pages/auth-2-carousel.init.js"></script>
+
+    <!-- App js -->
+    <script src="~/register/js/app.js"></script>
+
+
+
+
+</body>
+
+<!-- Mirrored from themesbrand.com/skote/layouts/auth-login-2.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 20 Aug 2023 11:10:20 GMT -->
+</html>
+<script src="~/assets/js/bundle.js?ver=2.9.1"></script>
+<script src="~/assets/js/scripts.js?ver=2.9.1"></script>
+
+<script>
+    $(document).on('submit', function (event) {
+        CheckRequestLogin();
+        event.preventDefault();
+    });
+    function CheckRequestLogin() {
+        debugger;
+        var Email = $("#Email").val();
+        var Password = $("#Password").val();
+        if (Email == "") {
+            $("#dvMessage").html("Please enter Email");
+            return false;
+        }
+        else if (Password == "") {
+            $("#dvMessage").html("Please enter Password");
+            return false;
+        }
+        else {
+            $('#AjaxLoader').show();
+            setTimeout(
+                function () {
+                    $.ajax({
+                        type: "POST",
+                        url: "/Login/Login",
+                        contentType: "application/json; charset=utf-8",
+                        dataType: "json",
+                        async: false,
+                        data: '{"Email":"' + Email + '","Password":"' + Password + '"}',
+                        success: function (response) {
+                            if (response == "success") {
+
+                                window.location.href = "/Login/AgentDash";
+                                $("#dvMessage").html("Please wait ...");
+                                return false;
+                            }
+                            else {
+                                $('#AjaxLoader').hide();
+                                $("#dvMessage").html("Invalid Credentials");
+                            }
+                        },
+                        failure: function (response) {
+                            $('#AjaxLoader').hide();
+                            JsonOutput = (response.responseText);
+                        },
+                        error: function (response) {
+                            $('#AjaxLoader').hide();
+                            JsonOutput = (response.responseText);
+                        }
+                    });
+                }, 100);
+        }
+    }
+
+
+</script>
+
+<style>
+
+    /*!
+            // 3. Loader
+            // --------------------------------------------------*/
+    .loader {
+        top: 0;
+        left: 0;
+        position: fixed;
+        opacity: 0.8;
+        z-index: 10000000;
+        background: Black;
+        height: 100%;
+        width: 100%;
+        margin: auto;
+    }
+
+    .strip-holder {
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+        left: 50%;
+        margin-left: -50px;
+        position: relative;
+    }
+
+    .strip-1,
+    .strip-2,
+    .strip-3 {
+        width: 20px;
+        height: 20px;
+        background: #ffa353;
+        position: relative;
+        -webkit-animation: stripMove 2s ease infinite alternate;
+        animation: stripMove 2s ease infinite alternate;
+        -moz-animation: stripMove 2s ease infinite alternate;
+    }
+
+    .strip-2 {
+        -webkit-animation-duration: 2.1s;
+        animation-duration: 2.1s;
+        background-color: #F8E401;
+    }
+
+    .strip-3 {
+        -webkit-animation-duration: 2.2s;
+        animation-duration: 2.2s;
+        background-color: #E45415;
+    }
+
+    @@-webkit-keyframes stripMove {
+        0% {
+            transform: translate3d(0px, 0px, 0px);
+            -webkit-transform: translate3d(0px, 0px, 0px);
+            -moz-transform: translate3d(0px, 0px, 0px);
+        }
+
+        50% {
+            transform: translate3d(0px, 0px, 0px);
+            -webkit-transform: translate3d(0px, 0px, 0px);
+            -moz-transform: translate3d(0px, 0px, 0px);
+            transform: scale(4, 1);
+            -webkit-transform: scale(4, 1);
+            -moz-transform: scale(4, 1);
+        }
+
+        100% {
+            transform: translate3d(-50px, 0px, 0px);
+            -webkit-transform: translate3d(-50px, 0px, 0px);
+            -moz-transform: translate3d(-50px, 0px, 0px);
+        }
+    }
+
+    @@-moz-keyframes stripMove {
+        0% {
+            transform: translate3d(-50px, 0px, 0px);
+            -webkit-transform: translate3d(-50px, 0px, 0px);
+            -moz-transform: translate3d(-50px, 0px, 0px);
+        }
+
+        50% {
+            transform: translate3d(0px, 0px, 0px);
+            -webkit-transform: translate3d(0px, 0px, 0px);
+            -moz-transform: translate3d(0px, 0px, 0px);
+            transform: scale(4, 1);
+            -webkit-transform: scale(4, 1);
+            -moz-transform: scale(4, 1);
+        }
+
+        100% {
+            transform: translate3d(50px, 0px, 0px);
+            -webkit-transform: translate3d(50px, 0px, 0px);
+            -moz-transform: translate3d(50px, 0px, 0px);
+        }
+    }
+
+    @@keyframes stripMove {
+        0% {
+            transform: translate3d(-50px, 0px, 0px);
+            -webkit-transform: translate3d(-50px, 0px, 0px);
+            -moz-transform: translate3d(-50px, 0px, 0px);
+        }
+
+        50% {
+            transform: translate3d(0px, 0px, 0px);
+            -webkit-transform: translate3d(0px, 0px, 0px);
+            -moz-transform: translate3d(0px, 0px, 0px);
+            transform: scale(4, 1);
+            -webkit-transform: scale(4, 1);
+            -moz-transform: scale(4, 1);
+        }
+
+        100% {
+            transform: translate3d(50px, 0px, 0px);
+            -webkit-transform: translate3d(50px, 0px, 0px);
+            -moz-transform: translate3d(50px, 0px, 0px);
+        }
+    }
+</style>
+<script type="text/javascript">
+    debugger;
+
+
+    $(document).ready(function () {
+        //your own JS code here
+        var hostname = window.location.origin;
+        if (hostname.indexOf("customer.mypay.com.np") > 0) {
+            window.location.href = "https://customer.mypay.com.np/mypayuserlogin"
+        }
+        else {
+            document.getElementsByTagName("html")[0].style.visibility = "visible";
+        }
+    });
+
+</script>
+<!-- JAVASCRIPT -->

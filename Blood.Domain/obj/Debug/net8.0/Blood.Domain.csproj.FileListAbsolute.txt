@@ -1,0 +1,13 @@
+F:\NewTeam\TaskManagement\Blood.Domain\bin\Debug\net8.0\Blood.Domain.deps.json
+F:\NewTeam\TaskManagement\Blood.Domain\bin\Debug\net8.0\Blood.Domain.dll
+F:\NewTeam\TaskManagement\Blood.Domain\bin\Debug\net8.0\Blood.Domain.pdb
+F:\NewTeam\TaskManagement\Blood.Domain\obj\Debug\net8.0\Blood.Domain.csproj.AssemblyReference.cache
+F:\NewTeam\TaskManagement\Blood.Domain\obj\Debug\net8.0\Blood.Domain.GeneratedMSBuildEditorConfig.editorconfig
+F:\NewTeam\TaskManagement\Blood.Domain\obj\Debug\net8.0\Blood.Domain.AssemblyInfoInputs.cache
+F:\NewTeam\TaskManagement\Blood.Domain\obj\Debug\net8.0\Blood.Domain.AssemblyInfo.cs
+F:\NewTeam\TaskManagement\Blood.Domain\obj\Debug\net8.0\Blood.Domain.csproj.CoreCompileInputs.cache
+F:\NewTeam\TaskManagement\Blood.Domain\obj\Debug\net8.0\Blood.Domain.sourcelink.json
+F:\NewTeam\TaskManagement\Blood.Domain\obj\Debug\net8.0\Blood.Domain.dll
+F:\NewTeam\TaskManagement\Blood.Domain\obj\Debug\net8.0\refint\Blood.Domain.dll
+F:\NewTeam\TaskManagement\Blood.Domain\obj\Debug\net8.0\Blood.Domain.pdb
+F:\NewTeam\TaskManagement\Blood.Domain\obj\Debug\net8.0\ref\Blood.Domain.dll
