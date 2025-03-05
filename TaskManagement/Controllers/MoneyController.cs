@@ -61,19 +61,24 @@ namespace TaskManagement.Controllers
             try
             {
                 //  recive.FirstName = HttpContext.Session.GetString(Sessionmodel.sess);
-                var httpContext = _httpContextAccessor.HttpContext;
-                //Sessionmodel sessionmodel = new Sessionmodel();
-                var sessionmodel = new Sessionmodel
-                {
-                    sessionFirstname = "Hari", // Ensure this is not null
-                    SessionCountry = "Myanmar"     // Ensure this is not null
-                };
+                //var httpContext = _httpContextAccessor.HttpContext;
+                ////Sessionmodel sessionmodel = new Sessionmodel();
+                //var sessionmodel = new Sessionmodel
+                //{
+                //    sessionFirstname = "Hari", // Ensure this is not null
+                //    SessionCountry = "Myanmar"     // Ensure this is not null
+                //};
 
-                HttpContext.Session.SetString(sessionmodel.sessionFirstname, "Hari");
-                HttpContext.Session.SetString(sessionmodel.SessionCountry, "Myanmar");
+                //HttpContext.Session.SetString(sessionmodel.sessionFirstname, "Hari");
+                //HttpContext.Session.SetString(sessionmodel.SessionCountry, "Myanmar");
 
-                recive.FirstName = HttpContext.Session.GetString(sessionmodel.sessionFirstname);
-                recive.Country= HttpContext.Session.GetString(sessionmodel.SessionCountry);
+                //recive.FirstName = HttpContext.Session.GetString(sessionmodel.sessionFirstname);
+                //recive.Country= HttpContext.Session.GetString(sessionmodel.SessionCountry);
+
+                recive.SenderName = "Harry";
+                recive.SenderCountry = "Myanmar";
+                recive.SenderLastName = "chaudhary";
+
 
                 var edttask = TRepository.AddRemit(recive);
                 return RedirectToAction("ReportABC");
@@ -85,11 +90,13 @@ namespace TaskManagement.Controllers
             
         }
 
-        public IActionResult ReportABC()
+        public async Task<IActionResult> ReportABC()
         {
-            //var data = await TRepository.GetReport();
-            //return View(data);
-            return View();
+            
+            var data = await TRepository.GetReport();
+
+            return View(data);
+            //return View();
              
         }
 

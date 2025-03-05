@@ -72,14 +72,69 @@ namespace TaskManagement.Interface
             return rowsAffected > 0;
         }
 
-        public int AddRemit(Models.MoneyModel.ReciveDetails _model)
-        { 
-            string query = "INSERT INTO dbo.TransactionABC (SenderFirstName, SenderLastname,SenderCountry,SenderAddress,RecieverFirstName,RecieverLastname,RecieverCountry,RecieverAddress,BankName,AccountNumber,TransferAmount,Exchangerate,Payamount,DateAbc) VALUES (@SenderFirstName, @SenderLastname, @SenderCountry,@SenderAddress, @RecieverFirstName, @RecieverLastname,RecieverCountry,RecieverAddress,@BankName,@AccountNumber,@TransferAmount,@Exchangerate,@Payamount,GETDATE())";
+        public int AddRemit(Models.MoneyModel.ReciveDetails model)
+        {
+
+            //string query = "INSERT INTO dbo.TransactionABC (SenderFirstName, SenderLastname,SenderCountry,SenderAddress,RecieverFirstName,RecieverLastname,RecieverCountry,RecieverAddress,BankName,AccountNumber,TransferAmount,Exchangerate,Payamount,DateAbc) VALUES (@SenderFirstName, @SenderLastname, @SenderCountry,@SenderAddress, @RecieverFirstName, @RecieverLastname,RecieverCountry,RecieverAddress,@BankName,@AccountNumber,@TransferAmount,@Exchangerate,@Payamount,GETDATE())";
+            // SQL query
+            var sql = @"
+        INSERT INTO dbo.TransactionABC (
+            SenderFirstName, 
+            SenderLastName, 
+            SenderCountry, 
+            SenderAddress, 
+            RecieverFirstName, 
+            RecieverLastName, 
+            RecieverCountry, 
+            RecieverAddress, 
+            BankName, 
+            AccountNumber, 
+            TransferAmount, 
+            Exchangerate, 
+            Payamount, 
+            DateAbc
+        ) 
+        VALUES (
+            @SenderFirstName, 
+            @SenderLastName, 
+            @SenderCountry, 
+            @SenderAddress, 
+            @RecieverFirstName, 
+            @RecieverLastName, 
+            @RecieverCountry, 
+            @RecieverAddress, 
+            @BankName, 
+            @AccountNumber, 
+            @TransferAmount, 
+            @Exchangerate, 
+            @Payamount, 
+            @DateAbc
+        );";
+
+            // Parameters
+            var parameters = new
+            {
+                SenderFirstName = model.SenderName,
+                SenderLastName = model.SenderLastName,
+                SenderCountry = model.SenderCountry,
+                SenderAddress = model.Address,
+                RecieverFirstName = model.RecieverFirstName,
+                RecieverLastName = model.RecieverLastname,
+                RecieverCountry = model.Country,
+                RecieverAddress = model.Address,
+                BankName = model.BankName,
+                AccountNumber = model.AccountNumber,
+                TransferAmount = model.TransferAmount,
+                Exchangerate = model.ExchangeRate,
+                Payamount = model.Payamount,
+                DateAbc = DateTime.UtcNow // Use current date/time
+            };
+
             using (var connection = context.CreateConnection())
 
             {
-                var Games = connection.QueryAsync<Task>(query);
-                return connection.Execute(query, _model);
+                var Games = connection.QueryAsync<Task>(sql);
+                return connection.Execute(sql, parameters);
 
             }
         }
@@ -109,29 +164,21 @@ namespace TaskManagement.Interface
                 return await connection.QueryAsync<Models.UserRegModel>(sql);
             }
         }
-        //public async Task<Models.UserRegModel> GetUserByUsername(string Username)
-        //{
-        //    try
-        //    {
-        //        // Use parameterized query to prevent SQL injection
-        //        var sql = "SELECT * FROM ABCUsers WHERE USERNAME = @Username";
-        //        var parameters = new { Username = Username };
 
-        //        using var connection = context.CreateConnection();
-        //        var user = await connection.QueryAsync<Models.UserRegModel>(sql, parameters);
+        public async Task<IEnumerable<Models.MoneyModel.ReciveDetails>> GetReport()
+        {
 
-        //    }
-        //    catch (Exception ex)
-        //    {
-        //        // Log the exception (use a logging framework like Serilog, NLog, etc.)
-        //        // Example: logger.LogError(ex, "An error occurred while retrieving the user by username.");
-        //        Console.WriteLine($"Error: {ex.Message}");
-        //       // return await connection.QueryAsync<Models.UserRegModel>(sql);
-               
-        //    }
-        //}
+                var sql = "select * from TransactionABC";
+                using var connection = context.CreateConnection();
+                return await connection.QueryAsync<Models.MoneyModel.ReciveDetails>(sql);
+            
+        }
 
-
-
+        public async Task<IEnumerable<Models.UserRegModel>> GetUser()
+        {
+            var sql = "SELECT * FROM dbo.ABCUsers";
+            using var connection = context.CreateConnection();
+            return await connection.QueryAsync<Models.UserRegModel>(sql);
+        }
     }
 }

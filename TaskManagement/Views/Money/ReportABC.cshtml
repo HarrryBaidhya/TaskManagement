@@ -1,2 +1,137 @@
-﻿
+﻿@model IEnumerable<TaskManagement.Models.MoneyModel.ReciveDetails>
+
+@{
+    Layout = "_Layout";
+    // var title = "Display";
+    var datacheck = Model;
+    // ViewData["Title"] = title;
+}
+
+<a asp-action="AddTask" class="btn btn-primary btn-lg">Add</a> ||<a asp-action="ExportToExcel" class="btn btn-success">Download Excel</a>
+<table class="table">
+    <thead>
+        <tr>
+           
+            <th>
+                @Html.DisplayNameFor(model => model.RecieverFirstName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MiddletName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.RecieverLastname)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SenderName)
+
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Payamount)
+
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SenderCountry)
+
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+               @*  <td>
+                    @Html.DisplayFor(modelItem => item.Id)
+                </td> *@
+                <td>
+                    @Html.DisplayFor(modelItem => item.RecieverFirstName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.RecieverLastname)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.MiddletName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelitem => item.SenderName)
+
+                </td>
+                <td>
+                    @Html.DisplayFor(modelitem => item.Payamount)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelitem => item.SenderCountry)
+                </td>
+                <td>
+
+
+
+
+                </td>
+            </tr>
+
+        }
+
+    </tbody>
+</table>
+
+
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+<script src="~/lib/jquery-validation/dist/jquery.validate.min.js"></script>
+<script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+<script type="text/javascript">
+    );
+
+    $(function () {
+        var placeholderElement = $('#modal-placeholder');
+        $('button[data-toggle="ajax-modal"]').click(function (event) {
+            var url = $(this).data('url');
+            $.get(url).done(function (data) {
+                placeholderElement.html(data);
+                placeholderElement.find('.modal').modal('show');
+                $("#btnSave").click(function () {
+                    debugger
+                    var data = $("createform").serialize();
+
+                    $.ajax({
+                        type: "POST",
+                        url: "/Register/Create",
+                        data: data,
+                        //contentType: "application/Json;UTF-8",
+                        dataType: "json",
+                        success: function (data) {
+                            alert("Created success.");
+                            window.location = "https://localhost:44366/Register/Display/";
+
+
+                        },
+                        failure: function (data) {
+                            alert('fail to add');
+                        }
+
+
+                    });
+                });
+            });
+        });
+    });
+
+
+    function Delete(id) {
+
+        $.ajax({
+            url: "/TaskManagemnt/DeleteTask",
+            type: "POST",
+            data: { id: id },
+            success: function (data) {
+                alert('success');
+
+
+            }
+
+        })
+    }
+</script>
 

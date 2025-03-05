@@ -10,8 +10,8 @@
         <form asp-action="SavePaymentdetail">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             @Html.HiddenFor(Model => Model.Address)
-            @Html.HiddenFor(Model => Model.FirstName)
-            @Html.HiddenFor(Model => Model.LastName)
+            @Html.HiddenFor(Model => Model.RecieverFirstName)
+            @Html.HiddenFor(Model => Model.RecieverFirstName)
             @Html.HiddenFor(Model => Model.Country)
 
             <div class="form-group">

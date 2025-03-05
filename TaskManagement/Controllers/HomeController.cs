@@ -37,16 +37,56 @@ namespace TaskManagement.Controllers
             return View();
         }
 
-        public IActionResult Login(UserRegModel mod)
+      //  public async Task Login(UserRegModel mod)
 
+          public async Task<IActionResult> Login(UserRegModel mod)
         {
+            var data = await TRepository.GetUser();
 
-            var cheeckuser = TRepository.CheckUser(mod);
+
+           // var cheeckuser = TRepository.CheckUser(mod);
             UserRegModel regModel = new UserRegModel();
-            Sessionmodel sessionmodel = new Sessionmodel();
-            HttpContext.Session.SetString(sessionmodel.sessionFirstname, "pranaya@dotnettutotials.net");
-            HttpContext.Session.SetString(sessionmodel.SessionCountry, "pranaya@dotnettutotials.net");
-            HttpContext.Session.SetString(sessionmodel.SessionCountry, "pranaya@dotnettutotials.net");
+            var data2 = new UserRegModel() {
+                UserName=mod.UserName,
+                Password=mod.Password,
+            };
+
+
+
+           var user = data.FirstOrDefault(u =>
+    string.Equals(u.UserName, mod.UserName, StringComparison.OrdinalIgnoreCase) &&
+    u.Password == mod.Password);
+            if (User != null)
+
+            {
+
+                bool isPasswordValid = false;
+
+                // If password is stored as plain text
+                if (isPasswordValid = (user.Password == mod.Password)) {
+
+
+                    var sessionModel = new Sessionmodel
+                    {
+                        sessionFirstname = user.Firstname,
+         
+                    };
+
+                    // Set session data
+                    HttpContext.Session.SetString("SessionFirstname", sessionModel.sessionFirstname);
+                 ///   HttpContext.Session.SetString("SessionEmail", sessionmodel.SessionEmail);
+                    return RedirectToAction("Index");
+                }
+                else
+                {
+
+                    return View();
+                }
+
+           
+            }
+
+           
 
             return View();
         }
