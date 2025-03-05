@@ -8375,11 +8375,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\NewTeam\\TaskManagement\\TaskManagement\\BloodManagement.csproj",
+      "projectUniqueName": "F:\\NewTeam\\BlodManagement\\TaskManagement\\BloodManagement.csproj",
       "projectName": "BloodManagement",
-      "projectPath": "F:\\NewTeam\\TaskManagement\\TaskManagement\\BloodManagement.csproj",
+      "projectPath": "F:\\NewTeam\\BlodManagement\\TaskManagement\\BloodManagement.csproj",
       "packagesPath": "C:\\Users\\DELTA\\.nuget\\packages\\",
-      "outputPath": "F:\\NewTeam\\TaskManagement\\TaskManagement\\obj\\",
+      "outputPath": "F:\\NewTeam\\BlodManagement\\TaskManagement\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\DELTA\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -8394,14 +8394,14 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "F:\\NewTeam\\TaskManagement\\Blood.Business\\Blood.Business.csproj": {
-              "projectPath": "F:\\NewTeam\\TaskManagement\\Blood.Business\\Blood.Business.csproj"
+            "F:\\NewTeam\\BlodManagement\\Blood.Business\\Blood.Business.csproj": {
+              "projectPath": "F:\\NewTeam\\BlodManagement\\Blood.Business\\Blood.Business.csproj"
             },
-            "F:\\NewTeam\\TaskManagement\\Blood.Domain\\Blood.Domain.csproj": {
-              "projectPath": "F:\\NewTeam\\TaskManagement\\Blood.Domain\\Blood.Domain.csproj"
+            "F:\\NewTeam\\BlodManagement\\Blood.Domain\\Blood.Domain.csproj": {
+              "projectPath": "F:\\NewTeam\\BlodManagement\\Blood.Domain\\Blood.Domain.csproj"
             },
-            "F:\\NewTeam\\TaskManagement\\Blood.Infrastructure\\Blood.Infrastructure.csproj": {
-              "projectPath": "F:\\NewTeam\\TaskManagement\\Blood.Infrastructure\\Blood.Infrastructure.csproj"
+            "F:\\NewTeam\\BlodManagement\\Blood.Infrastructure\\Blood.Infrastructure.csproj": {
+              "projectPath": "F:\\NewTeam\\BlodManagement\\Blood.Infrastructure\\Blood.Infrastructure.csproj"
             }
           }
         }

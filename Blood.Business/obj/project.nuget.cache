@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "/Xc5J4jZxiYPfFfCbXuyryjXpYLxhupit6MG3RcUeR+oaBwE/2KB4Tm3Dn1+3fk+1+DnmTrRCw9BuDwcGYKi+g==",
+  "dgSpecHash": "lm2huRn7JjRtyrgOP2Pak/ZUxjURHqTmfRCaxl7XDrqrV24lxIHKak9U+Hes8TqQYhn8jt35jktxMiynxhjDyQ==",
   "success": true,
-  "projectFilePath": "F:\\NewTeam\\TaskManagement\\Blood.Business\\Blood.Business.csproj",
+  "projectFilePath": "F:\\NewTeam\\BlodManagement\\Blood.Business\\Blood.Business.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\DELTA\\.nuget\\packages\\microsoft.aspnetcore.authorization\\2.3.0\\microsoft.aspnetcore.authorization.2.3.0.nupkg.sha512",
     "C:\\Users\\DELTA\\.nuget\\packages\\microsoft.aspnetcore.connections.abstractions\\2.3.0\\microsoft.aspnetcore.connections.abstractions.2.3.0.nupkg.sha512",

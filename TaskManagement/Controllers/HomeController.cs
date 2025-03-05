@@ -46,11 +46,11 @@ namespace TaskManagement.Controllers
         public IActionResult Login(AdminUser AU)
 
         {
-
-   
             LoginCommon login = mapper.Map<LoginCommon>(AU);
-            login.Password = ApplicationUtilities.Encryption(AU.Password);
+            //login.Password = ApplicationUtilities.Encryption(AU.Password);
             var user = loginBusiness.LoginUser(login);
+            LoginCommon dm= mapper.Map<LoginCommon>(user);
+            if (dm.Message=="success") {return RedirectToAction("Dashboard"); }
             return View();
         }
 

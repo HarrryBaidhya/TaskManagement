@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "F:\\NewTeam\\TaskManagement\\Blood.Infrastructure\\Blood.Infrastructure.csproj": {}
+    "F:\\NewTeam\\BlodManagement\\Blood.Infrastructure\\Blood.Infrastructure.csproj": {}
   },
   "projects": {
-    "F:\\NewTeam\\TaskManagement\\Blood.Domain\\Blood.Domain.csproj": {
+    "F:\\NewTeam\\BlodManagement\\Blood.Domain\\Blood.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\NewTeam\\TaskManagement\\Blood.Domain\\Blood.Domain.csproj",
+        "projectUniqueName": "F:\\NewTeam\\BlodManagement\\Blood.Domain\\Blood.Domain.csproj",
         "projectName": "Blood.Domain",
-        "projectPath": "F:\\NewTeam\\TaskManagement\\Blood.Domain\\Blood.Domain.csproj",
+        "projectPath": "F:\\NewTeam\\BlodManagement\\Blood.Domain\\Blood.Domain.csproj",
         "packagesPath": "C:\\Users\\DELTA\\.nuget\\packages\\",
-        "outputPath": "F:\\NewTeam\\TaskManagement\\Blood.Domain\\obj\\",
+        "outputPath": "F:\\NewTeam\\BlodManagement\\Blood.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\DELTA\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -68,14 +68,14 @@
         }
       }
     },
-    "F:\\NewTeam\\TaskManagement\\Blood.Infrastructure\\Blood.Infrastructure.csproj": {
+    "F:\\NewTeam\\BlodManagement\\Blood.Infrastructure\\Blood.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\NewTeam\\TaskManagement\\Blood.Infrastructure\\Blood.Infrastructure.csproj",
+        "projectUniqueName": "F:\\NewTeam\\BlodManagement\\Blood.Infrastructure\\Blood.Infrastructure.csproj",
         "projectName": "Blood.Infrastructure",
-        "projectPath": "F:\\NewTeam\\TaskManagement\\Blood.Infrastructure\\Blood.Infrastructure.csproj",
+        "projectPath": "F:\\NewTeam\\BlodManagement\\Blood.Infrastructure\\Blood.Infrastructure.csproj",
         "packagesPath": "C:\\Users\\DELTA\\.nuget\\packages\\",
-        "outputPath": "F:\\NewTeam\\TaskManagement\\Blood.Infrastructure\\obj\\",
+        "outputPath": "F:\\NewTeam\\BlodManagement\\Blood.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\DELTA\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -90,8 +90,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "F:\\NewTeam\\TaskManagement\\Blood.Domain\\Blood.Domain.csproj": {
-                "projectPath": "F:\\NewTeam\\TaskManagement\\Blood.Domain\\Blood.Domain.csproj"
+              "F:\\NewTeam\\BlodManagement\\Blood.Domain\\Blood.Domain.csproj": {
+                "projectPath": "F:\\NewTeam\\BlodManagement\\Blood.Domain\\Blood.Domain.csproj"
               }
             }
           }

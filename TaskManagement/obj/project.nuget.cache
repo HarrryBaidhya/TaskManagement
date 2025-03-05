@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "STrXC87/fvdxx7TGmWvQE/757ItuRjn/tMUVYVLvOeyPcAHThuOUQAlMDMOU21/gRY5v25nZiTVBLTXgOXpKlQ==",
+  "dgSpecHash": "CVcqr9pOA+idiCzDKCfKmjYRfq7BnAdjmIqG14gO5u/EKOd2PZeguTJ67+JI2PL/XAMIaSJrKBmi1koBOfpVGg==",
   "success": true,
-  "projectFilePath": "F:\\NewTeam\\TaskManagement\\TaskManagement\\BloodManagement.csproj",
+  "projectFilePath": "F:\\NewTeam\\BlodManagement\\TaskManagement\\BloodManagement.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\DELTA\\.nuget\\packages\\automapper\\14.0.0\\automapper.14.0.0.nupkg.sha512",
     "C:\\Users\\DELTA\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",

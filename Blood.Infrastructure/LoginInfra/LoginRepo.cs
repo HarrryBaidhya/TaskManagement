@@ -21,8 +21,8 @@ namespace Blood.Infrastructure.LoginInfra
         public CommonDBResponse LoginUser(LoginCommon model)
         {
             LoginCommon r = new LoginCommon();
-            // set SQL Query
-            var sql = " @flag='login',@user_name=" + Dao.FilterString(model.MobileNo) + ",@password=" + Dao.FilterString(model.Password);
+            // set SQL 
+            var sql = "Exec sproc_BSUser_login @flag='login',@user_name=" + Dao.FilterString(model.UserName) + ",@password=" + Dao.FilterString(model.Password);
             // Consume DB
             var dt = Dao.ExecuteDataRow(sql);
 
@@ -33,9 +33,9 @@ namespace Blood.Infrastructure.LoginInfra
                 string message = Dao.ParseColumnValue(dt, "message").ToString();
                 if ((code ?? "1") != "0")
                 {
-                    //r.Code = CommonDBResponse.Failed;
-                    //r.Message = message;
-                    //r.Code = code;
+                   // r.Code = CommonDBResponse.Failed;
+                    r.Message = message;
+                    r.Code = Convert.ToInt32(code);
                 }
                 else
                 {
@@ -43,10 +43,10 @@ namespace Blood.Infrastructure.LoginInfra
                     r.SessionId = model.SessionId;
                     r.UserName = model.UserName;
                     r.UserId = model.MobileNo;
-                    //r.Code = CommonDBResponse.Success;
-                    //r.Message = message;
-                    //r.Code = code;
-                    return null;
+                   // r.Code = CommonDBResponse.Success;
+                    r.Message = message;
+                    r.Code = Convert.ToInt32(code);
+                    return r;
                 }
 
             }
