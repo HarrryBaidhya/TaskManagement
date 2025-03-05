@@ -3,6 +3,8 @@ using TaskManagement.ORMDapper;
 using static Microsoft.EntityFrameworkCore.DbLoggerCategory;
 using Microsoft.Data.SqlClient;
 using System.Configuration;
+using DocumentFormat.OpenXml.Office.Word;
+using DocumentFormat.OpenXml.Office2010.Excel;
 
 namespace TaskManagement.Interface
 {
@@ -69,6 +71,66 @@ namespace TaskManagement.Interface
 
             return rowsAffected > 0;
         }
+
+        public int AddRemit(Models.MoneyModel.ReciveDetails _model)
+        { 
+            string query = "INSERT INTO dbo.TransactionABC (SenderFirstName, SenderLastname,SenderCountry,SenderAddress,RecieverFirstName,RecieverLastname,RecieverCountry,RecieverAddress,BankName,AccountNumber,TransferAmount,Exchangerate,Payamount,DateAbc) VALUES (@SenderFirstName, @SenderLastname, @SenderCountry,@SenderAddress, @RecieverFirstName, @RecieverLastname,RecieverCountry,RecieverAddress,@BankName,@AccountNumber,@TransferAmount,@Exchangerate,@Payamount,GETDATE())";
+            using (var connection = context.CreateConnection())
+
+            {
+                var Games = connection.QueryAsync<Task>(query);
+                return connection.Execute(query, _model);
+
+            }
+        }
+        public int CreateRegister(Models.UserRegModel _model)
+        {
+            string query = "INSERT INTO dbo.ABCUsers(UserName,Password,Email,PhoneNumber,CreatedDate,Firstname,Lastname,Country,Address) VALUES (@UserName, @Password, @Email,@PhoneNumber, getdate(),@Firstname,@Lastname,@Country,@Address)";
+            using (var connection = context.CreateConnection())
+
+            {
+                var Games = connection.QueryAsync<Task>(query);
+                return connection.Execute(query, _model);
+            }
+        }
+
+        public async Task<IEnumerable<Models.UserRegModel>> CheckUser(Models.UserRegModel _model)
+        {
+            try
+            {
+                var sql = "select * from ABCUsers where USERNAME='" + _model.UserName + "'";
+                using var connection = context.CreateConnection();
+                return await connection.QueryAsync<Models.UserRegModel>(sql);
+            }
+            catch (Exception ex)
+            {
+                 var sql = "select * from ABCUsers where USERNAME='" + _model.UserName + "'";
+                using var connection = context.CreateConnection();
+                return await connection.QueryAsync<Models.UserRegModel>(sql);
+            }
+        }
+        //public async Task<Models.UserRegModel> GetUserByUsername(string Username)
+        //{
+        //    try
+        //    {
+        //        // Use parameterized query to prevent SQL injection
+        //        var sql = "SELECT * FROM ABCUsers WHERE USERNAME = @Username";
+        //        var parameters = new { Username = Username };
+
+        //        using var connection = context.CreateConnection();
+        //        var user = await connection.QueryAsync<Models.UserRegModel>(sql, parameters);
+
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        // Log the exception (use a logging framework like Serilog, NLog, etc.)
+        //        // Example: logger.LogError(ex, "An error occurred while retrieving the user by username.");
+        //        Console.WriteLine($"Error: {ex.Message}");
+        //       // return await connection.QueryAsync<Models.UserRegModel>(sql);
+               
+        //    }
+        //}
+
 
 
     }

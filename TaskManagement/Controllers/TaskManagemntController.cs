@@ -47,8 +47,8 @@ namespace TaskManagement.Controllers
 
         public async Task<IActionResult> UpdateTask( int id)
         {
-            var det = TRepository.GetTaskByID(id);
-            return View(det);
+         //   var det = TRepository.GetTaskByID(id);
+            return View();
        
         }
         [HttpPost]

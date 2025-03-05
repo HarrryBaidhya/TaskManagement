@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "F:\\NewTeam\\TaskManagement\\TaskManagement\\TaskManagement.csproj": {}
+    "F:\\TaskManagement\\TaskManagement\\TaskManagement.csproj": {}
   },
   "projects": {
-    "F:\\NewTeam\\TaskManagement\\TaskManagement\\TaskManagement.csproj": {
+    "F:\\TaskManagement\\TaskManagement\\TaskManagement.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\NewTeam\\TaskManagement\\TaskManagement\\TaskManagement.csproj",
+        "projectUniqueName": "F:\\TaskManagement\\TaskManagement\\TaskManagement.csproj",
         "projectName": "TaskManagement",
-        "projectPath": "F:\\NewTeam\\TaskManagement\\TaskManagement\\TaskManagement.csproj",
+        "projectPath": "F:\\TaskManagement\\TaskManagement\\TaskManagement.csproj",
         "packagesPath": "C:\\Users\\DELTA\\.nuget\\packages\\",
-        "outputPath": "F:\\NewTeam\\TaskManagement\\TaskManagement\\obj\\",
+        "outputPath": "F:\\TaskManagement\\TaskManagement\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\DELTA\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -78,6 +78,10 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[9.0.1, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[8.0.7, )"
             }
           },
           "imports": [
