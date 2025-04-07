@@ -1,17 +1,11 @@
 ﻿using Blood.domain;
 using Blood.domain.Models.Login;
 using Blood.infrastructure;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Blood.Infrastructure.LoginInfra
 {
     public class  LoginRepo:ILoginRepo
     {
-
         RepositoryDao Dao;
         public LoginRepo(RepositoryDao dao)
         {
@@ -48,7 +42,6 @@ namespace Blood.Infrastructure.LoginInfra
                     r.Code = Convert.ToInt32(code);
                     return r;
                 }
-
             }
             else
             {
@@ -57,6 +50,5 @@ namespace Blood.Infrastructure.LoginInfra
             }
             return null;
         }
-
     }
 }

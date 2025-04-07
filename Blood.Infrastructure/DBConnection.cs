@@ -1,10 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Configuration;
+﻿using System.Configuration;
 using System.Data.SqlClient;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Blood.Infrastructure
 {
@@ -13,11 +8,11 @@ namespace Blood.Infrastructure
         public static SqlConnection Connection()
         {
             SqlConnection con = new SqlConnection();
+
             SqlConnection.ClearAllPools();
             con = new SqlConnection();
             try
             {
-
                 con = new SqlConnection(Convert.ToString(ConfigurationManager.ConnectionStrings["ProductContextConnection"].ConnectionString));
 
                 if (con.State.ToString() == "Open")
@@ -28,14 +23,12 @@ namespace Blood.Infrastructure
                 {
                     con.Open();
                 }
-
                 return con;
             }
             catch (Exception ex)
             {
                 throw new ArgumentException(ex.Message);
             }
-
         }
     }
 }

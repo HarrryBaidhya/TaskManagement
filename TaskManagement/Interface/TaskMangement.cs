@@ -1,10 +1,5 @@
 ﻿using Dapper;
 using TaskManagement.ORMDapper;
-using static Microsoft.EntityFrameworkCore.DbLoggerCategory;
-using Microsoft.Data.SqlClient;
-using System.Configuration;
-using DocumentFormat.OpenXml.Office.Word;
-using DocumentFormat.OpenXml.Office2010.Excel;
 
 namespace TaskManagement.Interface
 {
@@ -23,39 +18,31 @@ namespace TaskManagement.Interface
             using var connection = context.CreateConnection();
             return await connection.QueryAsync<Models.Task>(sql);
         }
+
         public int NewTask(Models.Task _Ttask)
         {
-
             string query = "INSERT INTO Tasks (Title, Description, Status,CreatedAt,DueDate) VALUES (@Title, @Description, @status,GETDATE(),@dueDate)";
             using (var connection = context.CreateConnection())
-
             {
                 var Games = connection.QueryAsync<Task>(query);
                 return connection.Execute(query, _Ttask);
-
             }
-
         }
 
         public async Task<Models.Task?> GetTaskByID(int id)
         {
             var sql = "SELECT * FROM Tasks WHERE id = @Id";
-
             using var connection = context.CreateConnection();
-           var result = await connection.QueryAsync<Models.Task>(sql, new { Id = id });
+            var result = await connection.QueryAsync<Models.Task>(sql, new { Id = id });
             return result.FirstOrDefault();
-
-
         }
-
 
         public async Task<int> UpdateTask(Models.Task _model)
         {
             string query = "UPDATE Tasks SET Title ='" + _model.Title + "', Description = '" + _model.Description + "' , DueDate = '" + _model.DueDate + "' , Status = '" + _model.Status + "' where ID =" + Convert.ToString(_model.Id);
 
             using var connection = context.CreateConnection();
-            //int rowsAffected = connection.Executeasync<int>(query, _model);
-            //return rowsAffected > 0;
+
             return connection.Execute(query, new
             {
                 Title = _model.Title,
@@ -64,8 +51,8 @@ namespace TaskManagement.Interface
                 Status = _model.Status,
                 Id = _model.Id
             });
-
         }
+
         public bool DeleteTask(int Id)
         {
             string query = "DELETE FROM Tasks WHERE ID = @Id";
@@ -141,6 +128,7 @@ namespace TaskManagement.Interface
 
             }
         }
+
         public int CreateRegister(Models.UserRegModel _model)
         {
             string query = "INSERT INTO dbo.ABCUsers(UserName,Password,Email,PhoneNumber,CreatedDate,Firstname,Lastname,Country,Address) VALUES (@UserName, @Password, @Email,@PhoneNumber, getdate(),@Firstname,@Lastname,@Country,@Address)";
@@ -162,7 +150,7 @@ namespace TaskManagement.Interface
             }
             catch (Exception ex)
             {
-                 var sql = "select * from ABCUsers where USERNAME='" + _model.UserName + "'";
+                var sql = "select * from ABCUsers where USERNAME='" + _model.UserName + "'";
                 using var connection = context.CreateConnection();
                 return await connection.QueryAsync<Models.UserRegModel>(sql);
             }
@@ -170,11 +158,9 @@ namespace TaskManagement.Interface
 
         public async Task<IEnumerable<Models.MoneyModel.ReciveDetails>> GetReport()
         {
-
-                var sql = "select * from TransactionABC";
-                using var connection = context.CreateConnection();
-                return await connection.QueryAsync<Models.MoneyModel.ReciveDetails>(sql);
-            
+            var sql = "select * from TransactionABC";
+            using var connection = context.CreateConnection();
+            return await connection.QueryAsync<Models.MoneyModel.ReciveDetails>(sql);
         }
 
         public async Task<IEnumerable<Models.UserRegModel>> GetUser()

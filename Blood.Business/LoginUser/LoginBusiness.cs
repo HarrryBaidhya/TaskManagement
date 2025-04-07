@@ -1,11 +1,6 @@
 ﻿using Blood.domain.Models.Login;
 using Blood.domain;
 using Blood.Infrastructure.LoginInfra;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Blood.Business.LoginUser
 {
@@ -21,6 +16,5 @@ namespace Blood.Business.LoginUser
         {
             return repo.LoginUser(model);
         }
-
     }
 }

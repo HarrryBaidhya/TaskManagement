@@ -8370,38 +8370,46 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\DELTA\\.nuget\\packages\\": {}
+    "C:\\Users\\prashant.shrestha\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\NewTeam\\BlodManagement\\TaskManagement\\BloodManagement.csproj",
+      "projectUniqueName": "D:\\side\\TaskManagement\\TaskManagement\\BloodManagement.csproj",
       "projectName": "BloodManagement",
-      "projectPath": "F:\\NewTeam\\BlodManagement\\TaskManagement\\BloodManagement.csproj",
-      "packagesPath": "C:\\Users\\DELTA\\.nuget\\packages\\",
-      "outputPath": "F:\\NewTeam\\BlodManagement\\TaskManagement\\obj\\",
+      "projectPath": "D:\\side\\TaskManagement\\TaskManagement\\BloodManagement.csproj",
+      "packagesPath": "C:\\Users\\prashant.shrestha\\.nuget\\packages\\",
+      "outputPath": "D:\\side\\TaskManagement\\TaskManagement\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
       "configFilePaths": [
-        "C:\\Users\\DELTA\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\prashant.shrestha\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
+        "D:\\Projects\\IME_Nuget_Packages": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "F:\\NewTeam\\BlodManagement\\Blood.Business\\Blood.Business.csproj": {
-              "projectPath": "F:\\NewTeam\\BlodManagement\\Blood.Business\\Blood.Business.csproj"
+            "D:\\side\\TaskManagement\\Blood.Business\\Blood.Business.csproj": {
+              "projectPath": "D:\\side\\TaskManagement\\Blood.Business\\Blood.Business.csproj"
             },
-            "F:\\NewTeam\\BlodManagement\\Blood.Domain\\Blood.Domain.csproj": {
-              "projectPath": "F:\\NewTeam\\BlodManagement\\Blood.Domain\\Blood.Domain.csproj"
+            "D:\\side\\TaskManagement\\Blood.Domain\\Blood.Domain.csproj": {
+              "projectPath": "D:\\side\\TaskManagement\\Blood.Domain\\Blood.Domain.csproj"
             },
-            "F:\\NewTeam\\BlodManagement\\Blood.Infrastructure\\Blood.Infrastructure.csproj": {
-              "projectPath": "F:\\NewTeam\\BlodManagement\\Blood.Infrastructure\\Blood.Infrastructure.csproj"
+            "D:\\side\\TaskManagement\\Blood.Infrastructure\\Blood.Infrastructure.csproj": {
+              "projectPath": "D:\\side\\TaskManagement\\Blood.Infrastructure\\Blood.Infrastructure.csproj"
             }
           }
         }
@@ -8489,7 +8497,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.201/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
       }
     }
   },

@@ -2,9 +2,7 @@
 
 @{
     Layout = "_Layout";
-    // var title = "Display";
     var datacheck = Model;
-    // ViewData["Title"] = title;
 }
 
 <a asp-action="AddTask" class="btn btn-primary btn-lg">Add</a> ||<a asp-action="ExportToExcel" class="btn btn-success">Download Excel</a>
@@ -40,9 +38,6 @@
         @foreach (var item in Model)
         {
             <tr>
-               @*  <td>
-                    @Html.DisplayFor(modelItem => item.Id)
-                </td> *@
                 <td>
                     @Html.DisplayFor(modelItem => item.RecieverFirstName)
                 </td>
@@ -54,7 +49,6 @@
                 </td>
                 <td>
                     @Html.DisplayFor(modelitem => item.SenderName)
-
                 </td>
                 <td>
                     @Html.DisplayFor(modelitem => item.Payamount)
@@ -64,23 +58,16 @@
                 </td>
                 <td>
 
-
-
-
                 </td>
             </tr>
-
         }
-
     </tbody>
 </table>
 
-
-
 <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-
 <script src="~/lib/jquery-validation/dist/jquery.validate.min.js"></script>
 <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+
 <script type="text/javascript">
     );
 
@@ -99,25 +86,19 @@
                         type: "POST",
                         url: "/Register/Create",
                         data: data,
-                        //contentType: "application/Json;UTF-8",
                         dataType: "json",
                         success: function (data) {
                             alert("Created success.");
                             window.location = "https://localhost:44366/Register/Display/";
-
-
                         },
                         failure: function (data) {
                             alert('fail to add');
                         }
-
-
                     });
                 });
             });
         });
     });
-
 
     function Delete(id) {
 
@@ -134,4 +115,3 @@
         })
     }
 </script>
-

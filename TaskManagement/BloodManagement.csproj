@@ -7,6 +7,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Models\110sc1u2.ew2~" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Folder Include="wwwroot\Content\" />
   </ItemGroup>
 

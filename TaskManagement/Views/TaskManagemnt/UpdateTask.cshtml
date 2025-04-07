@@ -1,8 +1,10 @@
 ﻿@model TaskManagement.Models.Task
+
 @{
     Layout = "_Layout";
     var datacheck = Model;
 }
+
 <h1>Edit</h1>
 <h4>Task</h4>
 <hr />
@@ -41,9 +43,11 @@
         </form>
     </div>
 </div>
+
 <div>
     <a asp-action="Index">Back to List</a>
 </div>
+
 @section Scripts {
     @{
         await Html.RenderPartialAsync("_ValidationScriptsPartial");

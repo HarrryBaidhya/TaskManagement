@@ -1,8 +1,7 @@
-﻿
-
-
-using Blood.Business.LoginUser;
+﻿using Blood.Business.LoginUser;
+using Blood.infrastructure;
 using Blood.Infrastructure.LoginInfra;
+using TaskManagement.Interface;
 
 namespace BloodManagement.ServicesExtensions
 {
@@ -20,7 +19,7 @@ namespace BloodManagement.ServicesExtensions
             //services.AddScoped<IAgentRepo, AgentRepo>();
             services.AddScoped<ILoginBusiness, LoginBusiness>();
             services.AddScoped<ILoginRepo, LoginRepo>();
-
+            //services.AddScoped<ITaskManagment, TaskMangement>();
 
             return services;
         }

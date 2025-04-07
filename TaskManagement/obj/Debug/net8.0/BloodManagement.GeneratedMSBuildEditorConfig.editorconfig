@@ -17,75 +17,91 @@ build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = BloodManagement
 build_property.RootNamespace = BloodManagement
-build_property.ProjectDir = F:\NewTeam\BlodManagement\TaskManagement\
+build_property.ProjectDir = D:\side\TaskManagement\TaskManagement\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = F:\NewTeam\BlodManagement\TaskManagement
+build_property.MSBuildProjectDirectory = D:\side\TaskManagement\TaskManagement
 build_property._RazorSourceGeneratorDebug = 
 
-[F:/NewTeam/BlodManagement/TaskManagement/Views/ChatUser/ChatIndex.cshtml]
+[D:/side/TaskManagement/TaskManagement/Views/ChatUser/ChatIndex.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2hhdFVzZXJcQ2hhdEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/NewTeam/BlodManagement/TaskManagement/Views/Home/Dashboard.cshtml]
+[D:/side/TaskManagement/TaskManagement/Views/Home/Dashboard.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxEYXNoYm9hcmQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/NewTeam/BlodManagement/TaskManagement/Views/Home/Index.cshtml]
+[D:/side/TaskManagement/TaskManagement/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/NewTeam/BlodManagement/TaskManagement/Views/Home/Login.cshtml]
+[D:/side/TaskManagement/TaskManagement/Views/Home/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/NewTeam/BlodManagement/TaskManagement/Views/Home/LoginUser.cshtml]
+[D:/side/TaskManagement/TaskManagement/Views/Home/LoginUser.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxMb2dpblVzZXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/NewTeam/BlodManagement/TaskManagement/Views/Home/Privacy.cshtml]
+[D:/side/TaskManagement/TaskManagement/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/NewTeam/BlodManagement/TaskManagement/Views/Home/RegisterUser.cshtml]
+[D:/side/TaskManagement/TaskManagement/Views/Home/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxSZWdpc3Rlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/side/TaskManagement/TaskManagement/Views/Home/RegisterUser.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxSZWdpc3RlclVzZXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/NewTeam/BlodManagement/TaskManagement/Views/Shared/Error.cshtml]
+[D:/side/TaskManagement/TaskManagement/Views/Money/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW9uZXlcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/side/TaskManagement/TaskManagement/Views/Money/Paymentdetail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW9uZXlcUGF5bWVudGRldGFpbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/side/TaskManagement/TaskManagement/Views/Money/ReportABC.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW9uZXlcUmVwb3J0QUJDLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/side/TaskManagement/TaskManagement/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/NewTeam/BlodManagement/TaskManagement/Views/Shared/_ValidationScriptsPartial.cshtml]
+[D:/side/TaskManagement/TaskManagement/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/NewTeam/BlodManagement/TaskManagement/Views/TaskManagemnt/AddTask.cshtml]
+[D:/side/TaskManagement/TaskManagement/Views/TaskManagemnt/AddTask.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFza01hbmFnZW1udFxBZGRUYXNrLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/NewTeam/BlodManagement/TaskManagement/Views/TaskManagemnt/Index.cshtml]
+[D:/side/TaskManagement/TaskManagement/Views/TaskManagemnt/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFza01hbmFnZW1udFxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/NewTeam/BlodManagement/TaskManagement/Views/TaskManagemnt/UpdateTask.cshtml]
+[D:/side/TaskManagement/TaskManagement/Views/TaskManagemnt/UpdateTask.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFza01hbmFnZW1udFxVcGRhdGVUYXNrLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/NewTeam/BlodManagement/TaskManagement/Views/TaskManagemnt/ViewPartial.cshtml]
+[D:/side/TaskManagement/TaskManagement/Views/TaskManagemnt/ViewPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFza01hbmFnZW1udFxWaWV3UGFydGlhbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/NewTeam/BlodManagement/TaskManagement/Views/_ViewImports.cshtml]
+[D:/side/TaskManagement/TaskManagement/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/NewTeam/BlodManagement/TaskManagement/Views/_ViewStart.cshtml]
+[D:/side/TaskManagement/TaskManagement/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/NewTeam/BlodManagement/TaskManagement/Views/Shared/_Layout.cshtml]
+[D:/side/TaskManagement/TaskManagement/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-c5q9dskg6i

@@ -2,9 +2,7 @@
 using System.Data;
 using System.Data.SqlClient;
 using System.Diagnostics;
-using System.Linq;
 using System.Reflection;
-using Blood.Domain;
 using Microsoft.Extensions.Configuration;
 using Blood.domain;
 
@@ -12,7 +10,7 @@ namespace Blood.infrastructure
 {
     public class RepositoryDao
     {
-        System.Data.SqlClient.SqlConnection _connection;
+        SqlConnection _connection;
         private readonly IConfiguration _configuration;
         private readonly string? _connectionString;
         private object ResponseCode;
@@ -28,17 +26,17 @@ namespace Blood.infrastructure
         }
         private void Init()
         {
-            _connection = new System.Data.SqlClient.SqlConnection(GetConnectionString());
+            _connection = new SqlConnection(GetConnectionString());
         }
         private void OpenConnection()
         {
-            if (_connection.State == System.Data.ConnectionState.Open)
+            if (_connection.State == ConnectionState.Open)
                 _connection.Close();
             _connection.Open();
         }
         private void CloseConnection()
         {
-            if (_connection.State == System.Data.ConnectionState.Open)
+            if (_connection.State == ConnectionState.Open)
                 this._connection.Close();
         }
 
@@ -46,6 +44,7 @@ namespace Blood.infrastructure
         {
             return _connectionString != null ? _connectionString : "";
         }
+
         protected DataTable ExecuteDataTable(string procName, SqlParameter[] parameters)
         {
             SqlCommand cmd = new SqlCommand();
@@ -53,7 +52,7 @@ namespace Blood.infrastructure
             DataTable dt = new DataTable();
             try
             {
-                cmd = new System.Data.SqlClient.SqlCommand(procName, _connection);
+                cmd = new SqlCommand(procName, _connection);
                 if (parameters != null)
                     cmd.Parameters.AddRange(parameters);
                 cmd.CommandType = CommandType.StoredProcedure;
@@ -71,6 +70,7 @@ namespace Blood.infrastructure
             }
             return dt;
         }
+
         public object ParseColumnValue(DataRow row, string ColumnName)
         {
             if (row == null || string.IsNullOrEmpty(ColumnName))
@@ -99,31 +99,30 @@ namespace Blood.infrastructure
             var eRow = ExecuteDataRow(eSql);
             return ParseColumnValue(eRow, "id").ToString();
         }
+
         /// <summary>
         /// Returns DataSet (Used in case multiple tables are returned)
         /// </summary>
         /// <param name="sql">Sql Query</param>
         /// <returns></returns>
-        public System.Data.DataSet ExecuteDataset(string sql)
+        public DataSet ExecuteDataset(string sql)
         {
-            var ds = new System.Data.DataSet();
-            var cmd = new System.Data.SqlClient.SqlCommand(sql, _connection);
+            var ds = new DataSet();
+            var cmd = new SqlCommand(sql, _connection);
             cmd.CommandTimeout = 120;
-            System.Data.SqlClient.SqlDataAdapter da;
+            SqlDataAdapter da;
 
             try
             {
                 OpenConnection();
                 da = new SqlDataAdapter(sql, _connection);
-                da = new System.Data.SqlClient.SqlDataAdapter(cmd);
+                da = new SqlDataAdapter(cmd);
                 da.Fill(ds);
                 da.Dispose();
                 CloseConnection();
             }
             catch (Exception ex)
             {
-                throw ex;
-                //throw ex;
                 DataTable objDt1 = new DataTable();
                 var GetCallingAssembly = Assembly.GetCallingAssembly();
                 var GetExecutingAssembly = Assembly.GetExecutingAssembly();
@@ -139,6 +138,7 @@ namespace Blood.infrastructure
                 ParseColumnValue(eRow, "id").ToString();
                 //objDt1.Rows.Add(1, ConfigurationManager.AppSettings["phase"] != null && ConfigurationManager.AppSettings["phase"].ToString().ToUpper() == "DEVELOPMENT" ? ex.Message : "Something went wrong. Please contact support. Error Id:" + ParseColumnValue(eRow, "id").ToString(), ParseColumnValue(eRow, "id").ToString());
                 ds.Tables.Add(objDt1);
+                throw ex;
             }
             finally
             {
@@ -188,10 +188,10 @@ namespace Blood.infrastructure
         /// </summary>
         /// <param name="sql">Sql Query</param>
         /// <returns></returns>
-        public System.Collections.Generic.List<object> SqlQueryToListObject(string sql)
+        public List<object> SqlQueryToListObject(string sql)
         {
             var dt = ExecuteDataTable(sql);
-            var list = new System.Collections.Generic.List<object>();
+            var list = new List<object>();
             if (null != dt)
             {
                 foreach (System.Data.DataRow item in dt.Rows)
@@ -240,7 +240,6 @@ namespace Blood.infrastructure
             if (!string.IsNullOrEmpty(str))
             {
                 str = str.Replace(";", "");
-                //str = str.Replace(",", "");
                 str = str.Replace("--", "");
                 str = str.Replace("'", "''");
 
@@ -267,9 +266,7 @@ namespace Blood.infrastructure
                 str = str.Replace(" sproc_ ", "");
                 str = str.Replace(" apiproc_ ", "");
 
-
                 str = str.Replace("<script", "");
-
             }
             else
             {
@@ -320,8 +317,6 @@ namespace Blood.infrastructure
             return res;
         }
 
-
-
         /// <summary>
         /// Parses Sql Query To CommonDbResponse object
         /// </summary>
@@ -336,9 +331,9 @@ namespace Blood.infrastructure
         /// </summary>
         /// <param name="sql"></param>
         /// <returns></returns>
-        public System.Collections.Generic.Dictionary<string, string> ParseSqlToDictionary(string sql)
+        public Dictionary<string, string> ParseSqlToDictionary(string sql)
         {
-            var dictionary = new System.Collections.Generic.Dictionary<string, string>();
+            var dictionary = new Dictionary<string, string>();
             var dt = ExecuteDataTable(sql);
             if (null == dt || dt.Rows.Count == 0)
             {
@@ -346,10 +341,7 @@ namespace Blood.infrastructure
             }
             for (int i = 0; i < dt.Rows.Count; i++)
             {
-                //for (int j = 0; j < dt.Columns.Count; j++)
-                //{
                 dictionary.Add(dt.Rows[i][0].ToString(), dt.Rows[i][1].ToString());
-                //}
             }
             return dictionary;
         }
@@ -358,19 +350,16 @@ namespace Blood.infrastructure
         /// </summary>
         /// <param name="dt">DataTable Object</param>
         /// <returns></returns>
-        public System.Collections.Generic.Dictionary<string, string> DataTableToDictionary(DataTable dt)
+        public Dictionary<string, string> DataTableToDictionary(DataTable dt)
         {
-            var dictionary = new System.Collections.Generic.Dictionary<string, string>();
+            var dictionary = new Dictionary<string, string>();
             if (null == dt || dt.Rows.Count == 0)
             {
                 return dictionary;
             }
             for (int i = 0; i < dt.Rows.Count; i++)
             {
-                //for (int j = 0; j < dt.Columns.Count; j++)
-                //{
                 dictionary.Add(dt.Rows[i][0].ToString(), dt.Rows[i][1].ToString());
-                //}
             }
             return dictionary;
         }
@@ -383,7 +372,6 @@ namespace Blood.infrastructure
         {
             CommonDBResponse dr = new CommonDBResponse()
             {
-                // Code = ResponseCode.Exception,
                 Message = msg,
                 Extra1 = ""
             };
@@ -469,7 +457,6 @@ namespace Blood.infrastructure
                                             );
                                         property.SetValue(classObject, propertyValue, null);
                                     }
-
                                 }
                             }
                         }
@@ -498,17 +485,20 @@ namespace Blood.infrastructure
 
             return str.TrimEnd().TrimStart();
         }
+
         public object ConvertType<T>(object source)
         {
             Type t = typeof(T);
             return Convert.ChangeType(source, t);
         }
+
         public T JsonToModel<T>(string json)
         {
             T model = default(T);
             model = JsonConvert.DeserializeObject<T>(json);
             return model;
         }
+
         public T ObjectToModel<T>(object o)
         {
             string json = JsonConvert.SerializeObject(o);
@@ -516,12 +506,5 @@ namespace Blood.infrastructure
             model = JsonConvert.DeserializeObject<T>(json);
             return model;
         }
-
-        internal string FilterString(object contactPersonIdExpiryDate)
-        {
-            throw new NotImplementedException();
-        }
     }
 }
-
-

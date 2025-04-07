@@ -10,7 +10,6 @@ namespace Blood.Business.LoginUser
 {
     public interface ILoginBusiness
     {
-
         CommonDBResponse LoginUser(LoginCommon model);
     }
 }

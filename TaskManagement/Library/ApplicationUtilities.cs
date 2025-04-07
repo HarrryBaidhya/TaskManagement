@@ -6,9 +6,6 @@ namespace template.application.Library
 {
     public static class ApplicationUtilities
     {
-        
-      
-
         public static List<T> MapObjects<T>(this object item)
         {
             List<T> sr = default(List<T>);
@@ -28,13 +25,13 @@ namespace template.application.Library
             }
             return null;
         }
+
         public static T DeserializeJSON<T>(this string jsonString)
         {
             T modelType = default(T);
             modelType = JsonConvert.DeserializeObject<T>(jsonString);
             return modelType;
         }
-
 
         public static double? GetDouble(this ISession session, string key)
         {
@@ -50,7 +47,6 @@ namespace template.application.Library
         {
             session.Set(key, BitConverter.GetBytes(value));
         }
-
 
         public static T GetComplexData<T>(this ISession session, string key)
         {
@@ -101,7 +97,6 @@ namespace template.application.Library
             }
         }
 
-
         public static string Encryption(string plainText)
         {
             string key = "ZZ9489Slw8OslwoS";
@@ -128,7 +123,6 @@ namespace template.application.Library
                     }
                 }
             }
-
             return Convert.ToBase64String(array, 0, array.Length);
         }
     }

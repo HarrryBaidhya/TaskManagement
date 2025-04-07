@@ -1,14 +1,7 @@
-﻿using Blood.domain;
-using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
-using System.Reflection;
-using System.Xml.Linq;
-
-namespace Blood.domain.Models.Login
+﻿namespace Blood.domain.Models.Login
 {
-    public class LoginCommon:CommonDBResponse
+    public class LoginCommon : CommonDBResponse
     {
-
         public int AId { get; set; }
         public string UserName { get; set; } = "";
         public string Password { get; set; } = "";
@@ -16,7 +9,7 @@ namespace Blood.domain.Models.Login
         public int Code { get; set; }
         public string Message { get; set; } = "";
         public string? Flag { get; set; }
-        public string? actionIp { get; set; } 
+        public string? actionIp { get; set; }
         public string? FirstTimeLogin { get; set; }
         public string? FullName { get; set; }
         public string? UserId { get; set; }
@@ -33,6 +26,7 @@ namespace Blood.domain.Models.Login
         public string? MobileNo { get; set; }
         public string DeviceId { get; set; }
     }
+
     public class LoginCommonApi
     {
         public string? user_login_id { get; set; }
@@ -41,15 +35,16 @@ namespace Blood.domain.Models.Login
         public string? ipAddress { get; set; }
         public string? info { get; set; }
         public string? password { get; set; }
-
     }
+
     public class DeviceInfo
-    {        
-        public string? device_name { get; set; }        
-        public string? os_version { get; set; }      
-        public string? model { get; set; }  
+    {
+        public string? device_name { get; set; }
+        public string? os_version { get; set; }
+        public string? model { get; set; }
         public string? device_id { get; set; }
     }
+
     public class ApiCommonRequest
     {
         public string user_login_id { get; set; }

@@ -2,16 +2,10 @@
 
 @{
     Layout = "_Layout";
-    // var title = "Display";
     var datacheck = Model;
-    // ViewData["Title"] = title;
 }
-@* <p>
-    <div id="modal-placeholder"></div>
-    <button type="button" class="btn btn-primary btn-lg" data-toggle="ajax-modal" data-target="#AddModal" data-url="@Url.Action("ViewPartial", "TaskManagemnt")">
-        AddNew
-    </button>
-</p> *@
+
+
 <a asp-action="AddTask" class="btn btn-primary btn-lg">Add</a> ||<a asp-action="ExportToExcel" class="btn btn-success">Download Excel</a>
 <table class="table">
     <thead>
@@ -55,26 +49,15 @@
                     @Html.DisplayFor(modelitem => item.DueDate)
                 </td>
                 <td>
-
-
-
                     @Html.ActionLink("Update", "UpdateTask", new { id = item.Id })|
                     @Html.ActionLink("Delete", "DeleteTask", new { id = item.Id })
-                    @* <button type="button" onclick="Delete(@item.Id);" data-bind="@item.Id">Delete</button> *@
-
-
                 </td>
             </tr>
-
         }
-
     </tbody>
 </table>
 
-
-
 <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-
 <script src="~/lib/jquery-validation/dist/jquery.validate.min.js"></script>
 <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
 <script type="text/javascript">
@@ -95,25 +78,19 @@
                         type: "POST",
                         url: "/Register/Create",
                         data: data,
-                        //contentType: "application/Json;UTF-8",
                         dataType: "json",
                         success: function (data) {
                             alert("Created success.");
                             window.location = "https://localhost:44366/Register/Display/";
-
-
                         },
                         failure: function (data) {
                             alert('fail to add');
                         }
-
-
                     });
                 });
             });
         });
     });
-
 
     function Delete(id) {
     
@@ -123,8 +100,6 @@
             data: { id: id },
             success: function (data) {
                 alert('success');
-
-
             }
 
         })
