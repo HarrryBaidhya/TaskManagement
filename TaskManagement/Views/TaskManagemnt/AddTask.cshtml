@@ -1,7 +1,9 @@
 ﻿@model TaskManagement.Models.Task
+
 @{
     Layout = "_Layout";
 }
+
 <h1>Create</h1>
 <h4>Friend</h4>
 <hr />
@@ -40,9 +42,11 @@
         </form>
     </div>
 </div>
+
 <div>
     <a asp-action="Index">Back to List</a>
 </div>
+
 @section Scripts {
     @{
         await Html.RenderPartialAsync("_ValidationScriptsPartial");

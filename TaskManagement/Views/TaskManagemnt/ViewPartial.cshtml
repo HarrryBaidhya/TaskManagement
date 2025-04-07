@@ -11,7 +11,6 @@
                 </button>
             </div>
 
-            @*<input name="IsValid" type="hidden" value="@ViewData.ModelState.IsValid.ToString()" />*@
             <form class="modelform" action="Create" id="createForm" method="post" enctype="multipart/form-data">
                 <div class="modal-body">
                     <label for="Email">Email </label>
@@ -44,28 +43,19 @@
     $(document).ready(function () {
         $("#btnSave").click(function () {
             var data = $("#CreateForm").serialize();
-            //console.log(data);
             $.ajax({
                 type: "POST",
                 url: "/Register/Create",
                 data: data,
-                //contentType: "application/Json;UTF-8",
                 dataType: "json",
                 success: function (data) {
                     alert("Created success.");
                     window.location = "https://localhost:44366/Register/Display/";
-
-
                 },
                 failure: function (data) {
                     alert('fail to add');
                 }
-
-
             });
         });
     });
-
-
-
 </script>

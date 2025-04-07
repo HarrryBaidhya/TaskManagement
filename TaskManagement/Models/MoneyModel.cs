@@ -80,26 +80,17 @@
             public string RecieverFirstName { get; set; }
             public string MiddletName { get; set; }
             public string RecieverLastname { get; set; }
-
             public string Address { get; set; }
             public string Country { get; set; }
-
-             public string SenderName { get; set; }
+            public string SenderName { get; set; }
             public string SenderCountry { get; set; }
-            public string  SenderLastName { get; set; }
+            public string SenderLastName { get; set; }
             public string City { get; set; }
             public string BankName { get; set; }
-            public string AccountNumber{get;set;}
-
+            public string AccountNumber { get; set; }
             public double TransferAmount { get; set; }
             public string ExchangeRate { get; set; }
             public double Payamount { get; set; }
-
         }
-
-
-
-
-
     }
 }

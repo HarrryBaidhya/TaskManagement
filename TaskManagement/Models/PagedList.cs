@@ -6,11 +6,11 @@ namespace TaskManagement.Models
     {
         public int PageIndex { get; private set; }
         public int TotalPages { get; private set; }
+
         public PagedList(List<T> items, int count, int pageIndex, int pageSize)
         {
             PageIndex = pageIndex;
             TotalPages = (int)Math.Ceiling(count / (double)pageSize);
-
             this.AddRange(items);
         }
 

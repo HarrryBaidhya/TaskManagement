@@ -1,3 +1,7 @@
+using AutoMapper;
+using Blood.Business.LoginUser;
+using Blood.domain.Models.Login;
+using BloodManagement.Models;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 using TaskManagement.Interface;
@@ -8,11 +12,16 @@ namespace TaskManagement.Controllers
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
-        private readonly ITaskManagment TRepository;
-        public HomeController(ILogger<HomeController> logger,ITaskManagment managment)
+        private readonly ILoginBusiness loginBusiness;
+        private readonly IMapper mapper;
+        //private readonly ITaskManagment _taskManagment;
+
+        public HomeController(ILogger<HomeController> logger, ILoginBusiness bus, IMapper mapper/*, ITaskManagment TRepository*/)
         {
+            loginBusiness = bus;
             _logger = logger;
-            this.TRepository = managment;
+            this.mapper = mapper;
+            //_taskManagment = TRepository;
         }
 
         public IActionResult Index()
@@ -36,88 +45,106 @@ namespace TaskManagement.Controllers
         {
             return View();
         }
+        [HttpPost]
+        public IActionResult Login(AdminUser AU)
 
-      //  public async Task Login(UserRegModel mod)
-
-          public async Task<IActionResult> Login(UserRegModel mod)
         {
-            var data = await TRepository.GetUser();
+            LoginCommon login = mapper.Map<LoginCommon>(AU);
+            //login.Password = ApplicationUtilities.Encryption(AU.Password);
+            var user = loginBusiness.LoginUser(login);
+            LoginCommon dm = mapper.Map<LoginCommon>(user);
+            if (dm.Message == "success") { return RedirectToAction("Dashboard"); }
+            return View();
+        }
 
+        //  public async Task Login(UserRegModel mod)
 
-           // var cheeckuser = TRepository.CheckUser(mod);
+        public async Task<IActionResult> Login(UserRegModel mod)
+        {
+            //var data = await _taskManagment.Get();
+
+            // var cheeckuser = TRepository.CheckUser(mod);
             UserRegModel regModel = new UserRegModel();
-            var data2 = new UserRegModel() {
-                UserName=mod.UserName,
-                Password=mod.Password,
+            var data2 = new UserRegModel()
+            {
+                UserName = mod.UserName,
+                Password = mod.Password,
             };
 
-
-
-           var user = data.FirstOrDefault(u =>
-    string.Equals(u.UserName, mod.UserName, StringComparison.OrdinalIgnoreCase) &&
-    u.Password == mod.Password);
+            //var user = data.FirstOrDefault(u =>
+            //string.Equals(u.Title, mod.UserName, StringComparison.OrdinalIgnoreCase) &&
+            //u.Status == mod.Password);
             if (User != null)
-
             {
-
                 bool isPasswordValid = false;
 
                 // If password is stored as plain text
-                if (isPasswordValid = (user.Password == mod.Password)) {
+                //if (isPasswordValid = (user.Status == mod.Password))
+                //{
+                //    var sessionModel = new Sessionmodel
+                //    {
+                //        sessionFirstname = user.Title
+                //    };
 
-
-                    var sessionModel = new Sessionmodel
-                    {
-                        sessionFirstname = user.Firstname,
-         
-                    };
-
-                    // Set session data
-                    HttpContext.Session.SetString("SessionFirstname", sessionModel.sessionFirstname);
-                 ///   HttpContext.Session.SetString("SessionEmail", sessionmodel.SessionEmail);
-                    return RedirectToAction("Index");
-                }
-                else
-                {
-
-                    return View();
-                }
-
-           
+                //    // Set session data
+                //    HttpContext.Session.SetString("SessionFirstname", sessionModel.sessionFirstname);
+                //    ///   HttpContext.Session.SetString("SessionEmail", sessionmodel.SessionEmail);
+                //    return RedirectToAction("Index");
+                //}
+                //else
+                //{
+                //    return View();
+                //}
             }
-
-           
-
             return View();
         }
 
         [HttpGet]
         public IActionResult Register()
-
         {
             return View();
         }
 
 
-        [HttpPost]
-        public IActionResult Register(UserRegModel mod)
+        //[HttpPost]
+        //public IActionResult Register(UserRegModel mod)
 
-        {
-            try
-            {
-                var newFrnd = TRepository.CreateRegister(mod);
-                return RedirectToAction("Login");
-            }
-            catch
-            {
-                
-                return View();
-            }
-
-          
-        }
+        //{
+        //    try
+        //    {
+        //        var newFrnd = _taskManagment.UpdateTask(mod);
+        //        return RedirectToAction("Login");
+        //    }
+        //    catch
+        //    {
+        //        return View();
+        //    }
+        //}
 
         public IActionResult Dashboard()
+        {
+            return View();
+        }
+
+        public IActionResult SiginUser()
+        {
+            return View();
+        }
+
+
+        public IActionResult RegisterUser()
+        {
+            return View();
+        }
+        [HttpPost]
+        public IActionResult RegisterUser(BSRegisterUser BSR)
+        {
+            return View();
+        }
+
+
+
+        public IActionResult SignOutUser()
         {
             return View();
         }

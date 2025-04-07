@@ -15,6 +15,7 @@ namespace TaskManagement.Controllers
     {
         private readonly IHttpContextAccessor _httpContextAccessor;
         private readonly ITaskManagment TRepository;
+
         public MoneyController(ITaskManagment product, IHttpContextAccessor httpContextAccessor)
         {
             this.TRepository = product;
@@ -54,7 +55,7 @@ namespace TaskManagement.Controllers
         }
 
 
-        public IActionResult SavePaymentdetail(MoneyModel.ReciveDetails recive)
+        public IActionResult SavePaymentdetail(ReciveDetails recive)
         {
 
 
@@ -79,8 +80,18 @@ namespace TaskManagement.Controllers
                 recive.SenderCountry = "Myanmar";
                 recive.SenderLastName = "chaudhary";
 
+                Models.Task ok = new Models.Task()
+                {
+                    Title = "Harry",
+                    Status = "success",
+                    Description = "Chaudhary",
+                    DueDate = "",
+                    CreatedAt = "Myanmar"
+                };
 
-                var edttask = TRepository.AddRemit(recive);
+
+
+                var edttask = TRepository.NewTask(ok);
                 return RedirectToAction("ReportABC");
             }
             catch
@@ -90,15 +101,15 @@ namespace TaskManagement.Controllers
             
         }
 
-        public async Task<IActionResult> ReportABC()
-        {
+        //public async Task<IActionResult> ReportABC()
+        //{
             
-            var data = await TRepository.GetReport();
+        //    var data = await TRepository.GetReport();
 
-            return View(data);
-            //return View();
+        //    return View(data);
+        //    //return View();
              
-        }
+        //}
 
 
 
