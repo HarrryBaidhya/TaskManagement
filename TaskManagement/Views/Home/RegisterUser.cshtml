@@ -1,0 +1,255 @@
+﻿@model BloodManagement.Models.BSRegisterUser;
+@{
+    ViewData["Title"] = "Register";
+    Layout = null;
+}
+
+
+<!doctype html>
+<html lang="en">
+
+
+<head>
+
+    <meta charset="utf-8" />
+    <title>DrinkMandu</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="Premium Multipurpose Admin & Dashboard Template" name="description" />
+    <meta content="Themesbrand" name="author" />
+    <!-- App favicon -->
+    <link rel="shortcut icon" href="~/register/image/favicon.png">
+
+    <!-- owl.carousel css -->
+    <link rel="stylesheet" href="assets/libs/owl.carousel/assets/owl.carousel.min.css">
+
+    <link rel="stylesheet" href="assets/libs/owl.carousel/assets/owl.theme.default.min.css">
+
+    <!-- Bootstrap Css -->
+    <link href="~/register/css/bootstrap.min.css" id="bootstrap-style" rel="stylesheet" type="text/css" />
+    <!-- Icons Css -->
+    <link href="~/register/css/icons.min.css" rel="stylesheet" type="text/css" />
+    <!-- App Css-->
+    <link href="~/register/css/app.min.css" id="app-style" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body class="auth-body-bg">
+
+    <div>
+        <div class="container-fluid p-0">
+            <div class="row g-0">
+
+                <div class="col-xl-9 d-none d-lg-block" style="position: fixed;">
+                    <div class="auth-full-bg pt-lg-5 p-4">
+                        <div class="w-100">
+                            <div class="bg-overlay"></div>
+                            <div class="d-flex h-100 flex-column">
+
+                                <div class="p-4 mt-auto">
+                                    <div class="row justify-content-center">
+                                        <div class="col-lg-7">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end col -->
+
+                <div class="col-xl-3" style="position: absolute;right: 0; ">
+                    <div class="auth-full-page-content p-md-5 p-4">
+                        <div class="w-100">
+
+                            <div class="d-flex flex-column h-100">
+                                <div class="mb-4 mb-md-5">
+                                    <a href="" class="d-block auth-logo">
+                                        @*<img src="~/register/image/logo-dark.png" alt="" height="38" class="auth-logo-dark">*@
+                                        <img src="~/register/image/logo-light.png" alt="" height="38" class="auth-logo-light">
+                                    </a>
+                                </div>
+                                <div class="my-auto">
+
+                                    <div>
+                                        <h2 class="text-warning">Register account </h2>
+                                        <p class="text-muted">
+                                            Enter your Details
+                                        </p>
+                                    </div>
+
+
+                                    <div class="mt-3">
+                                        @*
+                                        <form class="needs-validation" novalidate="" action="">
+                                        *@
+                                        <form action="">
+                                            <div class="mb-2">
+                                                <label for="FirstName" class="form-label">First Name</label>
+                                                @Html.TextBox("First", "", new { @Type = "FirstName", @id = "FirstName", @Class = "form-control form-control-lg", autocomplete = "off", placeholder = "Enter Your First Name" })
+                                            </div>
+                                            <div class="mb-2">
+                                                <label for="LastName" class="form-label">Last Name</label>
+                                                @Html.TextBox("LastName", "", new { @Type = "LastName", @id = "LastName", @Class = "form-control form-control-lg", autocomplete = "off", placeholder = "Enter Your Sur Name" })
+                                            </div>
+                                            <div class="mb-2">
+                                                <label for="PassWord" class="form-label">PassWord</label>
+                                                @Html.TextBox("PassWord", "", new { @Type = "Password", @id = "PassWord", @Class = "form-control form-control-lg", autocomplete = "off", placeholder = "Enter PassWord" })
+                                            </div>
+                                            <div class="mb-2">
+                                                <label for="Email" class="form-label">Email </label>
+                                                @Html.TextBox("Email", "", new { @Type = "Email", @id = "Email", @Class = "form-control form-control-lg", autocomplete = "off", placeholder = "e.g.info@gmail.com" })
+
+                                            </div>
+                                            <div class="mb-2">
+                                                <label for="Contact" class="form-label">Contact </label>
+                                                @Html.TextBox("Contact", "", new { @Type = "Contact", @id = "Contact", @Class = "form-control form-control-lg", autocomplete = "off", placeholder = "e.g. 977" })
+
+                                            </div>
+                                            <div class="mb-2">
+                                                <label for="FullAddress" class="form-label">Full Address</label>
+                                                @Html.TextBox("Full Address", "", new { @Type = "Full Address", @id = "FullAddress", @Class = "form-control form-control-lg", autocomplete = "off", placeholder = "Kathmandu" })
+
+                                            </div>
+
+                                            <div class="mt-4 d-grid">
+                                                <input class="btn btn-warning waves-effect waves-light" type="submit" value="Register" />
+
+                                            </div>
+
+
+
+                                        </form>
+
+                                    </div>
+                                </div>
+
+                                <div class="mt-3 mt-md-5 text-center footer-login" style="position: absolute;bottom: 0;">
+                                    <p class="mb-0">© <script>document.write(new Date().getFullYear())</script> DrinkMandu. Powered <i class="mdi mdi-flash text-danger"></i> by DrinKmandu Nepal</p>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+                <!-- end col -->
+            </div>
+            <!-- end row -->
+        </div>
+        <!-- end container-fluid -->
+    </div>
+
+    <!-- JAVASCRIPT -->
+    <script src="~/register/boostrap/lib/jquery/jquery.min.js"></script>
+    <script src="~/register/boostrap/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="~/register/boostrap/lib/metismenu/metisMenu.min.js"></script>
+    <script src="~/register/boostrap/lib/simplebar/simplebar.min.js"></script>
+    <script src="~/register/boostrap/lib/node-waves/waves.min.js"></script>
+
+    <!-- owl.carousel js -->
+    <script src="assets/libs/owl.carousel/owl.carousel.min.js"></script>
+
+    <!-- auth-2-carousel init -->
+    <script src="~/register/pages/auth-2-carousel.init.js"></script>
+
+    <!-- App js -->
+    <script src="~/register/js/app.js"></script>
+
+</body>
+
+<!-- Mirrored from themesbrand.com/skote/layouts/auth-login-2.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 20 Aug 2023 11:10:20 GMT -->
+</html>
+
+
+
+<script src="~/assets/js/bundle.js?ver=2.9.1"></script>
+<script src="~/assets/js/scripts.js?ver=2.9.1"></script>
+
+<script>
+    $(document).on('submit', function (event) {
+
+        RegisterUser();
+        event.preventDefault();
+    });
+    function RegisterUser() {
+        debugger;
+        var FirstName = $("#FirstName").val();
+        var LastName = $("#LastName").val();
+        var Email = $("#Email").val();
+        var contact = $("#Contact").val();
+        var FullAddress = $("#FullAddress").val();
+        var PassWord = $("#PassWord").val();
+
+        //  var Password = $("#Password").val();
+
+        if (FirstName == "") {
+            $("#dvMessage").html("Please enter First Name");
+            return false;
+        }
+        else if (LastName = "") {
+            $("#dvMessage").html("Please enter Last Name");
+            return false;
+        }
+        else if (Email == "") {
+            $("#dvMessage").html("Please enter Email");
+            return false;
+        }
+        else if (contact == "") {
+            $("#dvMessage").html("Please enter contact");
+            return false;
+        }
+        else if (PassWord == "") {
+            $("#dvMessage").html("Please enter PassWord");
+            return false;
+        }
+        else if (FullAddress == "") {
+            $("#dvMessage").html("Please enter FullAddress");
+            return false;
+        }
+        else {
+            $('#AjaxLoader').show();
+            setTimeout(
+                function () {
+                    $.ajax({
+                        type: "POST",
+                        url: "/AddAgent/SaveAgent",
+                        contentType: "application/json; charset=utf-8",
+                        dataType: "json",
+                        async: false,
+                        data: '{"FirstName":"' + FirstName + '","UserEmail": "' + Email + '","Address": "' + FullAddress + '", "LastName": "' + LastName + '","contact": "' + contact + '", "Password": "' + PassWord + '" }',
+                        //data: '{"FirstName":"' + FirstName + '","Email": "' + Email + '","FullAddresss": "' + FullAddress+'"}',
+
+                        success: function (response) {
+                            if (response == "success") {
+                                window.location.href = "/Login/Login";
+                                $("#dvMessage").html("Please wait ...");
+                                return false;
+                            }
+                            else {
+                                $('#AjaxLoader').hide();
+                                $("#dvMessage").html("Invalid Credentials");
+                            }
+                        },
+
+                        failure: function (response) {
+                            $('#AjaxLoader').hide();
+                            JsonOutput = (response.responseText);
+                        },
+                        error: function (response) {
+                            $('#AjaxLoader').hide();
+                            JsonOutput = (response.responseText);
+                        }
+                    });
+                }, 100);
+        }
+
+    }
+
+</script>
+
+
+
+
+
+
+

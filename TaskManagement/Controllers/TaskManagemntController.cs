@@ -47,8 +47,8 @@ namespace TaskManagement.Controllers
 
         public async Task<IActionResult> UpdateTask( int id)
         {
-         //   var det = TRepository.GetTaskByID(id);
-            return View();
+            var det =  await TRepository.GetTaskByID(id);
+            return View(det);
        
         }
         [HttpPost]
@@ -111,7 +111,7 @@ namespace TaskManagement.Controllers
 
             // Save to MemoryStream
             using var stream = new MemoryStream();
-            workbook.SaveAs(stream);
+            w    orkbook.SaveAs(stream);
             stream.Position = 0;
 
             // Return Excel File as Response
