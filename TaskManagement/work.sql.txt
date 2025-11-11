@@ -1,0 +1,48 @@
+
+
+CREATE TABLE Supplier (
+    SupplierID INT IDENTITY(1,1) PRIMARY KEY,
+    SupplierName VARCHAR(100) NOT NULL,
+    Email VARCHAR(100),
+    City VARCHAR(50),
+    Country VARCHAR(50)
+);
+
+
+
+
+CREATE TABLE Product (
+    ProductID INT IDENTITY(1,1) PRIMARY KEY,
+    ProductName VARCHAR(100) NOT NULL,
+    Category VARCHAR(50),
+    Price DECIMAL(10,2),
+    StockQuantity INT DEFAULT 0,
+    SupplierID INT,
+    CreatedDate Varchar(200);
+    IsActive BIT DEFAULT 1,
+    FOREIGN KEY (SupplierID) REFERENCES Supplier(SupplierID)
+);
+
+
+
+
+CREATE TABLE [Order] (
+    OrderID INT IDENTITY(1,1) PRIMARY KEY,
+    OrderDate DATE NOT NULL,
+    CustomerName VARCHAR(100) NOT NULL,
+    CustomerEmail VARCHAR(100),
+    TotalAmount DECIMAL(10,2) DEFAULT 0.00,
+    OrderStatus VARCHAR(50) DEFAULT 'Pending'
+);
+
+
+
+CREATE TABLE OrderDetails (
+    OrderDetailID INT IDENTITY(1,1) PRIMARY KEY,
+    OrderID INT NOT NULL,
+    ProductID INT NOT NULL,
+    Quantity INT DEFAULT 1,
+    SubTotal DECIMAL(10,2) DEFAULT 0.00,
+    FOREIGN KEY (OrderID) REFERENCES [Order](OrderID),
+    FOREIGN KEY (ProductID) REFERENCES Product(ProductID)
+);

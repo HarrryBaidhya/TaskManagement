@@ -140,7 +140,7 @@ namespace TaskManagement.Interface
         }
         public int CreateRegister(Models.UserRegModel _model)
         {
-            string query = "INSERT INTO dbo.ABCUsers(UserName,Password,Email,PhoneNumber,CreatedDate,Firstname,Lastname,Country,Address) VALUES (@UserName, @Password, @Email,@PhoneNumber, getdate(),@Firstname,@Lastname,@Country,@Address)";
+            string query = "INSERT INTO dbo.Users(UserName,Password,Email,PhoneNumber,CreatedDate,Firstname,Lastname,Country,Address,UserRole) VALUES (@UserName, @Password, @Email,@PhoneNumber, getdate(),@Firstname,@Lastname,@Country,@Address,@UserRole)";
             using (var connection = context.CreateConnection())
 
             {
@@ -153,13 +153,13 @@ namespace TaskManagement.Interface
         {
             try
             {
-                var sql = "select * from ABCUsers where USERNAME='" + _model.UserName + "'";
+                var sql = "select * from Users where USERNAME='" + _model.UserName + "'";
                 using var connection = context.CreateConnection();
                 return await connection.QueryAsync<Models.UserRegModel>(sql);
             }
             catch (Exception ex)
             {
-                 var sql = "select * from ABCUsers where USERNAME='" + _model.UserName + "'";
+                 var sql = "select * from Users where USERNAME='" + _model.UserName + "'";
                 using var connection = context.CreateConnection();
                 return await connection.QueryAsync<Models.UserRegModel>(sql);
             }
@@ -176,7 +176,7 @@ namespace TaskManagement.Interface
 
         public async Task<IEnumerable<Models.UserRegModel>> GetUser()
         {
-            var sql = "SELECT * FROM dbo.ABCUsers";
+            var sql = "SELECT * FROM dbo.Users";
             using var connection = context.CreateConnection();
             return await connection.QueryAsync<Models.UserRegModel>(sql);
         }

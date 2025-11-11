@@ -13,6 +13,7 @@ var connectionString = builder.Configuration.GetConnectionString("ProductContext
 builder.Services.AddSingleton<DapperContext>();
 builder.Services.AddDbContext<AppDbContext>(options => options.UseSqlServer(connectionString));
 builder.Services.AddScoped<ITaskManagment, TaskMangement>();
+builder.Services.AddScoped<IProductManagement, ProductManagement>();
 builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("ProductContextConnection")));
 
@@ -41,12 +42,12 @@ app.UseHttpsRedirection();
 app.UseStaticFiles();
 
 app.UseRouting();
-
+app.UseSession();
 app.UseAuthorization();
 
 app.MapControllerRoute(
     name: "default",
   // pattern: "{controller=Money}/{action=Index}/{id?}");
  pattern: "{controller=Home}/{action=Login}/{id?}");
-app.UseSession();
+
 app.Run();

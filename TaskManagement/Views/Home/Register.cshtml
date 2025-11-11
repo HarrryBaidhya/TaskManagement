@@ -88,6 +88,14 @@
                 <span asp-validation-for="Address" class="text-danger"></span>
             </div>
 
+            <div class="form-floating mb-3">
+                <select asp-for="UserRole" class="form-select" asp-items="ViewBag.Roles">
+                    <option value="">-- Select Role --</option>
+                </select>
+                <label asp-for="UserRole">Role</label>
+                <span asp-validation-for="UserRole" class="text-danger"></span>
+            </div>
+
             <button type="submit" class="btn btn-primary w-100">Register</button>
         </form>
     </div>

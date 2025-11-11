@@ -1,0 +1,69 @@
+﻿@model IEnumerable<TaskManagement.Models.Supplier>
+
+@{
+    Layout = "_Layout";
+    // var title = "Display";
+    var datacheck = Model;
+    // ViewData["Title"] = title;
+}
+@* <p>
+    <div id="modal-placeholder"></div>
+    <button type="button" class="btn btn-primary btn-lg" data-toggle="ajax-modal" data-target="#AddModal" data-url="@Url.Action("ViewPartial", "TaskManagemnt")">
+        AddNew
+    </button>
+</p> *@
+<a asp-controller="Supplier" asp-action="Create" class="btn btn-primary btn-lg">Add</a>
+
+@* <a asp-action="Supplier" class="btn btn-primary btn-lg">Add</a>  *@
+<table class="table">
+    <thead>
+        <tr>
+            <@* th>
+                @Html.DisplayNameFor(model => model.Id)
+            </th> *@
+            <th>
+                @Html.DisplayNameFor(model => model.SupplierName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.City)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Country)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Email)
+
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+               
+                <td>
+                    @Html.DisplayFor(modelItem => item.SupplierName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.City)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Country)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelitem => item.Email)
+                </td>
+                <td>
+
+
+                </td>
+            </tr>
+
+        }
+
+    </tbody>
+</table>
+
+
+

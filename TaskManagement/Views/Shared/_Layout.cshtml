@@ -1,4 +1,4 @@
-﻿
+﻿@inject IHttpContextAccessor HttpContextAccessor
 <!DOCTYPE html>
 <html>
 <head>
@@ -47,18 +47,18 @@
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
                    aria-expanded="true" aria-controls="collapseTwo">
                     <i class="fas fa-fw fa-cog"></i>
-                    <span>Task Management</span>
+                    <span>Order Management</span>
                 </a>
                 <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
-                        <h6 class="collapse-header">Task Records:</h6>
-                        <a class="collapse-item" href="~/TaskManagemnt/Index"> task List</a>
+                        <h6 class="collapse-header">Order Records:</h6>
+                        <a class="collapse-item" href="~/Order/Orderdetail"> OrderDetail</a>
                         @*<a class="collapse-item" href="~/Students/Create">Student Create</a>*@
                     </div>
                 </div>
             </li>
 
-           <li class="nav-item">
+          @*  <li class="nav-item">
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseThree"
                    aria-expanded="true" aria-controls="collapseThree">
                     <i class="fas fa-fw fa-cog"></i>
@@ -71,7 +71,33 @@
                         <a class="collapse-item" href="~/Money/ReportABC">TransactionReport</a>
                     </div>
                 </div>
-            </li>
+            </li> *@
+
+            
+
+        
+            @if (HttpContextAccessor.HttpContext.Session.GetString("SessionRole") == "Admin")
+            {
+                <li class="nav-item">
+                    <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseThree"
+                       aria-expanded="true" aria-controls="collapseThree">
+                        <i class="fas fa-fw fa-cog"></i>
+                        <span>Management</span>
+                    </a>
+                    <div id="collapseThree" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+                        <div class="bg-white py-2 collapse-inner rounded">
+                            <h6 class="collapse-header">Suppliers</h6>
+                            <a class="collapse-item" href="~/Product/DetailsSupplier">Supplier</a>
+                            <a class="collapse-item" href="~/Product/ProductDetail">Product</a>
+                            <a class="collapse-item" href="~/Order/Employee">Employee</a>
+                        </div>
+                    </div>
+                </li>
+            }
+              
+
+
+
 
             @*
             <li class="nav-item">
@@ -355,7 +381,7 @@
                 <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
                 <div class="modal-footer">
                     <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-                    <a class="btn btn-primary" href="~/Home/LoginAdmin">Logout</a>
+                    <a class="btn btn-primary" href="~/Home/Login">Logout</a>
                 </div>
             </div>
         </div>

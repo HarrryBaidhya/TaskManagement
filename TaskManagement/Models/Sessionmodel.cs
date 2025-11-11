@@ -6,8 +6,9 @@
         public string sessionLastname { get; set; }
         public string sessionName { get; set; }
         public string SessionCountry { get; set; }
+        public  string sessionRole { get; set; }    
 
 
-    
+
     }
 }
