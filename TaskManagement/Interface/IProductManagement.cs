@@ -12,5 +12,15 @@ namespace TaskManagement.Interface
         int NewOrder(Models.OrderModel _model);
         Task<IEnumerable<Models.OrderModel>> GetOrderById(int OrderId);
         int UpdateOrder(Models.OrderModel _model);
+        Task<IEnumerable<Models.ProductModel>> GetProductById(int Productid);
+
+       // int UpdateProduct(Models.ProductModel _model);
+
+        Task<int> UpdateProduct(Models.ProductModel _model);
+
+        bool DeleteOrder(int OrderId);
+
+        
+        bool DeleteProduct(int ProductId);
     }
 }

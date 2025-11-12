@@ -64,17 +64,17 @@
                     <td>@item.CreatedDate</td>
                     <td>
                         <!-- ✏️ Update button -->
-                        <a asp-action="EditOrder"
-                           asp-route-id="@item.ProductID"
+                        <a asp-action="UpdateProduct"
+                           asp-route-ProductID="@item.ProductID"
                            class="btn btn-sm btn-warning">
                             <i class="fas fa-edit"></i> Edit
                         </a>
 
                         <!-- 🗑️ Delete button -->
-                        <a asp-action="DeleteOrder"
-                           asp-route-id="@item.ProductID"
+                        <a asp-action="DeleteProuct"
+                           asp-route-ProductID="@item.ProductID"
                            class="btn btn-sm btn-danger"
-                           onclick="return confirm('Are you sure you want to delete this order?');">
+                           onclick="return confirm('Are you sure you want to delete this Product?');">
                             <i class="fas fa-trash"></i> Delete
                         </a>
                     </td>

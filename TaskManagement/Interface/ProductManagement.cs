@@ -1,4 +1,5 @@
 ﻿using Dapper;
+using DocumentFormat.OpenXml.Drawing.Diagrams;
 using System.Data;
 using System.Text;
 using TaskManagement.Models;
@@ -156,6 +157,53 @@ namespace TaskManagement.Interface
 
         }
 
+
+        public async Task<IEnumerable<Models.ProductModel>> GetProductById(int Productid)
+        {
+            var sql = "select * from Product  where  ProductId='" + Productid + "'";
+            using var connection = context.CreateConnection();
+            return await connection.QueryAsync<Models.ProductModel>(sql);
+        }
+
+
+        public async Task<int> UpdateProduct(Models.ProductModel _model)
+        {
+            string query = "UPDATE Product SET Category ='" + _model.Category + "', price = '" + _model.Price + "' , SupplierID = '" + _model.SupplierID + "' , IsActive = '" + _model.IsActive + "' where productID =" + Convert.ToString(_model.ProductID);
+
+            using var connection = context.CreateConnection();
+            //int rowsAffected = connection.Executeasync<int>(query, _model);
+            //return rowsAffected > 0;
+            return connection.Execute(query, new
+            {
+               Category = _model.Category,
+               Price = _model.Price,
+                StockQuantity = _model.StockQuantity,
+                ProductName= _model.ProductName,    
+                Status = _model.IsActive,
+               productId = _model.ProductID
+            });
+
+        }
+
+
+
+        public bool DeleteOrder(int OrderId)
+        {
+            string query = "DELETE FROM Order WHERE OrderID = @Id";
+            using var connection = context.CreateConnection();
+            int rowsAffected = connection.Execute(query, new { OrderId });
+
+            return rowsAffected > 0;
+        }
+
+        public bool DeleteProduct(int ProductId)
+        {
+            string query = "DELETE FROM Product WHERE ProductID = @ProductID";
+            using var connection = context.CreateConnection();
+            int rowsAffected = connection.Execute(query, new { ProductId });
+
+            return rowsAffected > 0;
+        }
 
 
     }

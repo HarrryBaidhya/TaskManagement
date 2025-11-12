@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using NuGet.Protocol.Core.Types;
 using TaskManagement.Interface;
 using TaskManagement.Models;
@@ -141,11 +142,43 @@ namespace TaskManagement.Controllers
             return File(stream.ToArray(), "application/pdf", "Products.pdf");
         }
 
+       
+
         [HttpGet]
-        public IActionResult UpdateProduct()
+        public async Task<IActionResult> UpdateProduct(int Productid)
         {
-            return View();
+            var dataList = await TRepository.GetProductById(Productid); // ✅ Await the task
+            var data = dataList.FirstOrDefault();                   // ✅ Now it's IEnumerable<OrderModel>
+            return View(data);
         }
+
+
+
+        [HttpPost]
+        public async Task<IActionResult> UpdateProduct(ProductModel model)
+        {
+            var dataList = await TRepository.UpdateProduct(model);
+             return RedirectToAction("ProductDetail");
+        }
+
+
+        public async Task<IActionResult> DeleteProuct(int Productid)
+        {
+
+
+            try
+            {
+                var edtFrnd = TRepository.DeleteProduct(Productid);
+                return RedirectToAction("Index");
+            }
+            catch
+            {
+                return View();
+            }
+        }
+    }
+
+
 
     }
 
@@ -154,4 +187,4 @@ namespace TaskManagement.Controllers
 
 
 
-}
+

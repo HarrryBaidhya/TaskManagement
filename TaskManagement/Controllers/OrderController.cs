@@ -1,5 +1,6 @@
 ﻿using Azure;
 using DocumentFormat.OpenXml.Drawing;
+using DocumentFormat.OpenXml.Office2010.Excel;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.DotNet.MSIdentity.Shared;
@@ -154,7 +155,7 @@ namespace TaskManagement.Controllers
             var result = JsonConvert.DeserializeObject<EmployeeResponse>(Employeedata);
             List<EmployeeModel> employees = result.Data; // assuming EmployeeModel matches Employee class
             return View(employees);
-            return View();  
+           
         }
 
 
@@ -208,6 +209,21 @@ namespace TaskManagement.Controllers
 
 
         }
+
+       
+        public async Task<IActionResult> DeleteOrder(int OrderID)
+        {
+            try
+            {
+                var edtFrnd = TRepository.DeleteOrder(OrderID);
+                return RedirectToAction("Index");
+            }
+            catch
+            {
+                return View();
+            }
+        }
+
 
     }
 
