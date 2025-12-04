@@ -1,5 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using TaskManagement.Appdbcontext;
+using TaskManagement.Extension;
 using TaskManagement.Interface;
 using TaskManagement.Models;
 using TaskManagement.ORMDapper;
@@ -17,7 +18,8 @@ builder.Services.AddScoped<IProductManagement, ProductManagement>();
 builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("ProductContextConnection")));
 
-
+// ADD SIGNALR (Fixes your error)
+builder.Services.AddSignalR();
 builder.Services.AddHttpContextAccessor();
 //Configuring Session Services in ASP.NET Core
 builder.Services.AddDistributedMemoryCache();
@@ -44,7 +46,8 @@ app.UseStaticFiles();
 app.UseRouting();
 app.UseSession();
 app.UseAuthorization();
-
+app.MapControllers();
+app.MapHub<NotificationHub>("/notifyHub");
 app.MapControllerRoute(
     name: "default",
   // pattern: "{controller=Money}/{action=Index}/{id?}");

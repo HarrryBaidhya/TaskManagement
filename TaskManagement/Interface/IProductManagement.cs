@@ -19,8 +19,8 @@ namespace TaskManagement.Interface
         Task<int> UpdateProduct(Models.ProductModel _model);
 
         bool DeleteOrder(int OrderId);
-
-        
         bool DeleteProduct(int ProductId);
+        
+
     }
 }

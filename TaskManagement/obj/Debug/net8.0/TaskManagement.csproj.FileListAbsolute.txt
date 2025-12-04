@@ -538,3 +538,4 @@ F:\TaskManagement\TaskManagement\bin\Debug\net8.0\runtimes\osx\native\libSkiaSha
 F:\TaskManagement\TaskManagement\bin\Debug\net8.0\runtimes\win-arm64\native\libSkiaSharp.dll
 F:\TaskManagement\TaskManagement\bin\Debug\net8.0\runtimes\win-x64\native\libSkiaSharp.dll
 F:\TaskManagement\TaskManagement\bin\Debug\net8.0\runtimes\win-x86\native\libSkiaSharp.dll
+F:\TaskManagement\TaskManagement\obj\Debug\net8.0\swae.build.ex.cache

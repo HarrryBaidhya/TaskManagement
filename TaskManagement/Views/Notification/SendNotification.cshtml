@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>SignalR Notification Client</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/microsoft-signalr/7.0.0/signalr.min.js"></script>
+    @* <script src="https://cdnjs.cloudflare.com/ajax/libs/microsoft-signalr/7.0.5/signalr.min.js"></script> *@
+</head>
+<body>
+    <h2>SignalR Demo</h2>
+    <div id="messages"></div>
+
+    <script>
+            const connection = new signalR.HubConnectionBuilder()
+            .withUrl("/notifyHub")
+            .build();
+
+        // Start the connection
+        connection.start().then(() => {
+            console.log("Connected to SignalR");
+             fetch("https://localhost:7021/send", { method: "POST" });
+        }).catch(err => console.error(err));
+
+        // Send message to the hub
+
+
+        // Receive messages from the hub
+        // connection.on("ReceiveMessage", function (user, message) {
+        //     const li = document.createElement("li");
+           
+        //     li.textContent = `${user}: ${message}`;
+        //     document.getElementById("messagesList").appendChild(li);
+        // });
+
+        // const connection = new signalR.HubConnectionBuilder()
+        //     .withUrl("https://localhost:5001/notifyHub")
+        //     .build();
+
+        connection.on("ReceiveMessage", (user, message) => {
+            const msg = document.createElement("div");
+            msg.textContent = `${user}: ${message}`;
+            console.log(msg);
+            document.getElementById("messages").appendChild(msg);
+        });
+
+        connection.start().catch(err => console.error(err.toString()));
+    </script>
+</body>
+</html>

@@ -76,14 +76,14 @@ namespace TaskManagement.Interface
 
         public async Task<IEnumerable<OrderModel>> GetOrder(DateTime? searchDate, int pageNumber, int pageSize)
         {
-            var sql = new StringBuilder("SELECT * FROM dbo.[Order] WHERE 1=1");
+            var sql = new StringBuilder("SELECT * , (select ProductName from Product d where d.ProductID=p.ProductID) ProductName FROM dbo.[Order] o  left join OrderDetails p on p.OrderID=o.OrderID WHERE 1=1");
 
             if (searchDate.HasValue)
             {
-                sql.Append(" AND CAST(OrderDate AS DATE) = @searchDate");
+                sql.Append(" AND CAST(o.OrderDate AS DATE) = @searchDate");
             }
 
-            sql.Append(" ORDER BY OrderId  desc OFFSET @Offset ROWS FETCH NEXT @PageSize ROWS ONLY;");
+            sql.Append(" ORDER BY o.OrderId  desc OFFSET @Offset ROWS FETCH NEXT @PageSize ROWS ONLY;");
 
             using var connection = context.CreateConnection();
             return await connection.QueryAsync<OrderModel>(sql.ToString(), new
@@ -168,6 +168,7 @@ namespace TaskManagement.Interface
 
         public async Task<int> UpdateProduct(Models.ProductModel _model)
         {
+            _model.SupplierID = 1;
             string query = "UPDATE Product SET Category ='" + _model.Category + "', price = '" + _model.Price + "' , SupplierID = '" + _model.SupplierID + "' , IsActive = '" + _model.IsActive + "' where productID =" + Convert.ToString(_model.ProductID);
 
             using var connection = context.CreateConnection();
@@ -189,7 +190,7 @@ namespace TaskManagement.Interface
 
         public bool DeleteOrder(int OrderId)
         {
-            string query = "DELETE FROM Order WHERE OrderID = @Id";
+            string query = "DELETE FROM Order WHERE OrderID = @OrderId";
             using var connection = context.CreateConnection();
             int rowsAffected = connection.Execute(query, new { OrderId });
 

@@ -15,6 +15,8 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.TargetFrameworkIdentifier = .NETCoreApp
+build_property.TargetFrameworkVersion = v8.0
 build_property.RootNamespace = TaskManagement
 build_property.RootNamespace = TaskManagement
 build_property.ProjectDir = F:\TaskManagement\TaskManagement\
@@ -58,6 +60,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [F:/TaskManagement/TaskManagement/Views/Money/ReportABC.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW9uZXlcUmVwb3J0QUJDLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/TaskManagement/TaskManagement/Views/Notification/SendNotification.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTm90aWZpY2F0aW9uXFNlbmROb3RpZmljYXRpb24uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [F:/TaskManagement/TaskManagement/Views/Order/AddOrder.cshtml]
